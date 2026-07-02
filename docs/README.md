@@ -8,7 +8,7 @@
 
 A portfolio project for AI/agent engineering roles. The system is an autonomous on-call triage agent that, when an alert fires, proposes a root cause, impact estimate, relevant runbook, and drafted communications — then learns from whether it was right, measurably improving over time.
 
-The two artifacts that matter most are the **eval harness** and the **learning curve** (accuracy improving as the agent works more incidents). Every other component is scoped to serve them. The target resume line: *"raised root-cause accuracy from X% to Y% across N incidents via an automated feedback loop."*
+The two artifacts that matter most are the **eval harness** and the **learning curve** (accuracy improving as the agent works more incidents). Every other component is scoped to serve them.
 
 ## Core loop
 
