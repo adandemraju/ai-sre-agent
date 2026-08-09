@@ -20,3 +20,11 @@ def query_metrics(service: str, alert_type: str) -> str:
     }
     return canned.get(alert_type, f"[{service}] cpu_usage=normal mem_usage=normal")
 
+from pathlib import Path
+RUNBOOK_DIR = Path("runbooks")
+
+def retrieve_runbook(alert_type: str) -> str:
+    path = RUNBOOK_DIR / f"{alert_type}.md"
+    if path.exists():
+        return path.read_text()
+    return "No runbook on file for this alert type. Use general SRE judgment."
