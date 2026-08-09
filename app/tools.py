@@ -28,3 +28,14 @@ def retrieve_runbook(alert_type: str) -> str:
     if path.exists():
         return path.read_text()
     return "No runbook on file for this alert type. Use general SRE judgment."
+
+import os
+def remediate_action(action: str, service: str) -> str:
+    dry_run = os.getenv("DRY_RUN", "true").lower() == "true"
+    if dry_run:
+        return f"[DRY RUN] Would execute '{action}' on service '{service}'. No changes made."
+    return f"Executed '{action}' on service '{service}'. Service restored."
+
+
+def notify_slack(message) -> str:
+    print(message)
