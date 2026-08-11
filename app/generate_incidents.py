@@ -28,15 +28,15 @@ def generate_candidates(incident_time, service_files, n=8):
 
 def inject_guilty_candidate(candidates, incident_time, affected_files):
     guilty = random.choice(candidates)
-    guilty["timesatmp"] = incident_time - timedelta(minutes=random.randint(1,20)) #make it closer to incident type
+    guilty["timestamp"] = incident_time - timedelta(minutes=random.randint(1,20)) #make it closer to incident type
     guilty["files_changed"] = random.sample(affected_files, k = min(2,len(affected_files)))
-    return guilty["changeid"] #because the guilty persons change id will become the source
+    return guilty["change_id"] #because the guilty persons change id will become the source
 
 def build_incident(service_name, symptom, severity, base_time):
     service_files = SERVICE_FILES[service_name]
     affected_files = random.sample(service_files, k = min(2, len(service_files)))
 
-    candidates = generate_candidates(base_time, service_files, n = random.randomint(4,10))
+    candidates = generate_candidates(base_time, service_files, n = random.randint(4,10))
     true_cause_id = inject_guilty_candidate(candidates, base_time, affected_files)
 
     return {
@@ -59,7 +59,7 @@ def generate_incident_batch(n_incidents, start_time):
         service = random.choice(list(SERVICE_FILES.keys()))
         symptom = random.choice(SYMPTOMS)
         severity = random.choice(SEVERITIES)
-        base_time = start_time - timedelta(hours=random.randomint(0, 24*30)) #spread over 30 days
+        base_time = start_time - timedelta(hours=random.randint(0, 24*30)) #spread over 30 days
 
         incidents.append(build_incident(service, symptom, severity, base_time))
 
@@ -67,7 +67,7 @@ def generate_incident_batch(n_incidents, start_time):
 
 def split_incidents(incidents, test_fraction = 0.2): #standard to split 80 training 20 test
     random.shuffle(incidents)
-    split_idx = int(len(incidents)) * (1 - test_fraction)
+    split_idx = int(len(incidents) * (1 - test_fraction))
     return incidents[:split_idx], incidents[split_idx:]
 
 #datetime serialization for json
