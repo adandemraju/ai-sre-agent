@@ -1,0 +1,330 @@
+[
+  {
+    "incident_id": "564e1e2d-17c8-41ef-8e0f-d120cfa8678c",
+    "timestamp": "2025-11-18T11:20:00",
+    "service_name": "bot-management-service",
+    "symptom": "intermittent 5xx errors across edge network, error rate fluctuating every few minutes",
+    "severity": "critical",
+    "candidate_changes": [
+      {
+        "change_id": "1a252e33-fd3c-435e-b6f9-e5d8109924f6",
+        "timestamp": "2025-11-18T04:10:00",
+        "author": "jchen",
+        "files_changed": [
+          "edge/router.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 88
+      },
+      {
+        "change_id": "7084b203-57cc-4e50-928d-d6c6d0025faa",
+        "timestamp": "2025-11-18T07:50:00",
+        "author": "lmoreau",
+        "files_changed": [
+          "proxy/config_loader.rs"
+        ],
+        "change_type": "code",
+        "lines_changed": 45
+      },
+      {
+        "change_id": "05783082-e0e2-428c-b8e4-4648401ac845",
+        "timestamp": "2025-11-18T11:05:00",
+        "author": "rgarrison",
+        "files_changed": [
+          "db/permissions.yaml",
+          "bot_management/feature_file_gen.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 12
+      },
+      {
+        "change_id": "4479e0ba-065a-4e64-b3ad-2bbd533100eb",
+        "timestamp": "2025-11-18T01:20:00",
+        "author": "asingh",
+        "files_changed": [
+          "bot_management/query_builder.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 30
+      },
+      {
+        "change_id": "f805832d-ab9e-4289-bdac-4c39aeb9598f",
+        "timestamp": "2025-11-18T06:00:00",
+        "author": "twilkins",
+        "files_changed": [
+          "waf/rule_cache.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 15
+      }
+    ],
+    "true_cause_id": "05783082-e0e2-428c-b8e4-4648401ac845",
+    "source": "real_grounded"
+  },
+  {
+    "incident_id": "0064949d-b177-4868-a186-993f4434b4e7",
+    "timestamp": "2019-07-02T13:42:00",
+    "service_name": "waf-service",
+    "symptom": "CPU utilization spike across all edge nodes, elevated request latency, some 502 errors",
+    "severity": "critical",
+    "candidate_changes": [
+      {
+        "change_id": "d09de46d-1571-4030-bd04-62bded53934d",
+        "timestamp": "2019-07-02T05:22:00",
+        "author": "pkowalski",
+        "files_changed": [
+          "edge/tls_termination.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 120
+      },
+      {
+        "change_id": "07df9ddc-49c0-4d6a-8087-22abb0d638fc",
+        "timestamp": "2019-07-02T13:33:00",
+        "author": "mfontaine",
+        "files_changed": [
+          "waf/managed_rules.conf",
+          "waf/rule_engine.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 6
+      },
+      {
+        "change_id": "f9138748-72c6-47a4-9a34-b614a7373ede",
+        "timestamp": "2019-07-02T09:22:00",
+        "author": "hshimizu",
+        "files_changed": [
+          "dns/resolver.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 40
+      },
+      {
+        "change_id": "a1a6cf0d-d427-445f-a989-fecfe5cd0f28",
+        "timestamp": "2019-07-02T02:02:00",
+        "author": "bnguyen",
+        "files_changed": [
+          "cache/purge_worker.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 75
+      }
+    ],
+    "true_cause_id": "07df9ddc-49c0-4d6a-8087-22abb0d638fc",
+    "source": "real_grounded"
+  },
+  {
+    "incident_id": "6ec36dbb-e157-4df3-afe9-66130b878d90",
+    "timestamp": "2025-06-12T09:05:00",
+    "service_name": "issues-service",
+    "symptom": "failed writes when creating new issues, insert failures on primary key column",
+    "severity": "critical",
+    "candidate_changes": [
+      {
+        "change_id": "334cf85d-badc-4eee-952b-2ad8bdd4ebda",
+        "timestamp": "2025-06-12T07:35:00",
+        "author": "vpetrov",
+        "files_changed": [
+          "issues/api_handler.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 55
+      },
+      {
+        "change_id": "2721c88f-3a93-4d5f-9867-15ad4694534b",
+        "timestamp": "2025-06-12T04:05:00",
+        "author": "rabdullah",
+        "files_changed": [
+          "auth/session_cache.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 20
+      },
+      {
+        "change_id": "d3d36252-9a6b-4e5e-a557-e5d741922765",
+        "timestamp": "2025-05-29T11:45:00",
+        "author": "koleary",
+        "files_changed": [
+          "db/schema/issues_table.sql"
+        ],
+        "change_type": "code",
+        "lines_changed": 8
+      },
+      {
+        "change_id": "2e6e5c04-015b-4a22-abf9-fd6a30096766",
+        "timestamp": "2025-06-11T23:05:00",
+        "author": "ewong",
+        "files_changed": [
+          "search/indexer.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 140
+      },
+      {
+        "change_id": "ac383ade-25df-459d-8669-3ce818d42371",
+        "timestamp": "2025-06-12T08:20:00",
+        "author": "ftanaka",
+        "files_changed": [
+          "issues/notifications.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 25
+      }
+    ],
+    "true_cause_id": "d3d36252-9a6b-4e5e-a557-e5d741922765",
+    "source": "real_grounded"
+  },
+  {
+    "incident_id": "c80ad674-8a5e-4fc9-92f9-b052e15ff9ae",
+    "timestamp": "2021-10-21T08:50:00",
+    "service_name": "mysql-orchestrator-service",
+    "symptom": "widespread elevated latency and partial write failures across multiple regions",
+    "severity": "high",
+    "candidate_changes": [
+      {
+        "change_id": "65a548cc-bdae-4cd3-8fa7-0729e131aff2",
+        "timestamp": "2021-10-21T02:10:00",
+        "author": "csantos",
+        "files_changed": [
+          "mysql/replication_worker.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 60
+      },
+      {
+        "change_id": "58da6491-846a-48c3-ab03-894ae76d0238",
+        "timestamp": "2021-10-21T08:15:00",
+        "author": "dmuller",
+        "files_changed": [
+          "orchestrator/failover_policy.yaml"
+        ],
+        "change_type": "config",
+        "lines_changed": 5
+      },
+      {
+        "change_id": "924b5a8a-9575-4d17-921a-a2f0657b0f3d",
+        "timestamp": "2021-10-21T06:20:00",
+        "author": "wzhang",
+        "files_changed": [
+          "monitoring/alert_rules.yaml"
+        ],
+        "change_type": "config",
+        "lines_changed": 10
+      },
+      {
+        "change_id": "f64f0e68-a699-464d-8ad6-bc8ff48fc87d",
+        "timestamp": "2021-10-21T05:10:00",
+        "author": "nboateng",
+        "files_changed": [
+          "api/rate_limiter.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 35
+      }
+    ],
+    "true_cause_id": "58da6491-846a-48c3-ab03-894ae76d0238",
+    "source": "real_grounded"
+  },
+  {
+    "incident_id": "f94719f2-5c6d-441d-8b51-14da3b49057a",
+    "timestamp": "2015-10-13T08:55:00",
+    "service_name": "articles-service",
+    "symptom": "requests timing out, database connection pool exhausted during scheduled migration window",
+    "severity": "high",
+    "candidate_changes": [
+      {
+        "change_id": "4c831405-53a5-42df-8227-5136ed2726e5",
+        "timestamp": "2015-10-13T05:55:00",
+        "author": "aokafor",
+        "files_changed": [
+          "articles/render_view.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 50
+      },
+      {
+        "change_id": "00901960-2d09-4f4d-9a95-a2b5c3fa831d",
+        "timestamp": "2015-10-13T08:45:00",
+        "author": "sfreeman",
+        "files_changed": [
+          "db/migrations/0045_alter_view_count.sql"
+        ],
+        "change_type": "code",
+        "lines_changed": 4
+      },
+      {
+        "change_id": "a343216e-4714-4986-900b-672e795e03e6",
+        "timestamp": "2015-10-13T07:25:00",
+        "author": "jlindgren",
+        "files_changed": [
+          "articles/cache_layer.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 18
+      },
+      {
+        "change_id": "b4abf3d8-0e97-40f7-a8f2-1558fb566bd9",
+        "timestamp": "2015-10-13T03:15:00",
+        "author": "mhassan",
+        "files_changed": [
+          "auth/token_refresh.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 22
+      }
+    ],
+    "true_cause_id": "00901960-2d09-4f4d-9a95-a2b5c3fa831d",
+    "source": "real_grounded"
+  },
+  {
+    "incident_id": "a2fa1b71-ec34-4d7f-a3f7-e6d0ba6086fd",
+    "timestamp": "2021-01-04T06:45:00",
+    "service_name": "web-tier-service",
+    "symptom": "elevated error rates and packet loss following holiday traffic surge, autoscaling oscillation between scale-down and scale-up",
+    "severity": "critical",
+    "candidate_changes": [
+      {
+        "change_id": "9d6630e4-62f4-49c4-9345-23aa11bc2424",
+        "timestamp": "2021-01-04T03:45:00",
+        "author": "rlindqvist",
+        "files_changed": [
+          "web/request_handler.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 65
+      },
+      {
+        "change_id": "5b1375f1-f8dc-4a4e-a0af-b378c678b1b2",
+        "timestamp": "2021-01-01T08:45:00",
+        "author": "tokafor",
+        "files_changed": [
+          "infra/autoscaling_policy.yaml"
+        ],
+        "change_type": "config",
+        "lines_changed": 9
+      },
+      {
+        "change_id": "72288ffe-22f8-4652-a17d-99f8b6625da0",
+        "timestamp": "2021-01-03T20:45:00",
+        "author": "ipatel",
+        "files_changed": [
+          "web/session_middleware.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 40
+      },
+      {
+        "change_id": "5d0126a1-6397-4786-a094-4c077c0d922b",
+        "timestamp": "2021-01-04T05:55:00",
+        "author": "gorourke",
+        "files_changed": [
+          "monitoring/dashboard_service.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 28
+      }
+    ],
+    "true_cause_id": "5b1375f1-f8dc-4a4e-a0af-b378c678b1b2",
+    "source": "real_grounded"
+  }
+]
