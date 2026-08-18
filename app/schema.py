@@ -14,6 +14,7 @@ class IncidentState(TypedDict): #no total=false because every field is needed
     timestamp : datetime #when
     service_name : str #what system
     symptom : str #what went wrong 
+    affected_files : list[str]
     severity :  Literal["low", "medium", "high", "critical"]
     candidate_changes : list[CandidateChange] #possible commits/deployments that could have caused this
     true_cause_id : str #candidate that caused the error

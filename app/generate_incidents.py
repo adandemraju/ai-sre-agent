@@ -20,7 +20,7 @@ def generate_candidates(incident_time, service_files, n=8):
             "timestamp" : incident_time - timedelta(minutes=offset),
             "author" : random.choice(AUTHOR_POOL), #placeholder for authors
             "files_changed" : random.sample(service_files, k = random.randint(1,3)), #chooses 1 to 3 random files in the files given
-            "change_type" : random.choice(["code", "config", "dependancy"]),
+            "change_type" : random.choice(["code", "config", "dependency"]),
             "lines_changed" : random.randint(5,400), #chooses random number from 5 to 400 lines changed
         })
 
@@ -44,6 +44,7 @@ def build_incident(service_name, symptom, severity, base_time):
         "timestamp" : base_time,
         "service_name" : service_name,
         "symptom" : symptom,
+        "affected_files" : affected_files,
         "severity" : severity,
         "candidate_changes" : candidates,
         "true_cause_id" : true_cause_id,
@@ -92,6 +93,4 @@ if __name__ == "__main__":
 
     save_incidents(train, "data/incidents/train.json")
     save_incidents(synthetic_test, "data/incidents/synthetic_test.json")
-
-
 

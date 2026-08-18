@@ -1,2550 +1,1256 @@
 [
   {
-    "incident_id": "1669606a-909c-4f41-aef4-bb8dd2b0393e",
-    "timestamp": "2026-08-01T23:49:08.101416",
+    "incident_id": "85b7a3c5-54e8-4b70-b63e-c73416bed041",
+    "timestamp": "2026-08-04T10:06:47.192094",
     "service_name": "checkout-service",
     "symptom": "timeout spike",
+    "affected_files": [
+      "checkout/utils.py",
+      "checkout/payment.py"
+    ],
     "severity": "critical",
     "candidate_changes": [
       {
-        "change_id": "653e6990-48bc-4df9-bbe8-9ba8e5a9e2b3",
-        "timestamp": "2026-08-01T23:10:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "checkout/payment.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 377
-      },
-      {
-        "change_id": "a8158a82-938a-416d-85b1-c0212173e1c9",
-        "timestamp": "2026-08-01T23:19:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 51
-      },
-      {
-        "change_id": "545d3ec4-aed1-407a-8f9d-4ff83419cb1b",
-        "timestamp": "2026-08-01T23:35:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 185
-      },
-      {
-        "change_id": "abd6063d-4a84-4d32-abd2-f48250e84976",
-        "timestamp": "2026-08-01T18:24:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/cart.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 5
-      },
-      {
-        "change_id": "3135a729-901e-4e0b-a352-479758751532",
-        "timestamp": "2026-08-01T18:00:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "checkout/cart.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 340
-      }
-    ],
-    "true_cause_id": "545d3ec4-aed1-407a-8f9d-4ff83419cb1b",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "f458ef6f-53d3-47db-91a5-9995f8d5ade8",
-    "timestamp": "2026-07-25T05:49:08.101416",
-    "service_name": "auth-service",
-    "symptom": "500 error rate spike",
-    "severity": "high",
-    "candidate_changes": [
-      {
-        "change_id": "33a7a6f1-6e7d-4114-84f1-f005bd69c9d9",
-        "timestamp": "2026-07-25T05:43:08.101416",
+        "change_id": "53ea5e2c-55f3-4b50-b30f-1f1ce38cda7a",
+        "timestamp": "2026-08-04T07:50:47.192094",
         "author": "mgarcia",
         "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 70
-      },
-      {
-        "change_id": "8dfab142-f3fa-4909-93d0-3b84fe68a935",
-        "timestamp": "2026-07-24T19:32:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "auth/middleware.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 313
-      },
-      {
-        "change_id": "a50dae1f-1175-4bc6-b636-f9034e5dab1f",
-        "timestamp": "2026-07-25T00:15:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/login.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 298
-      },
-      {
-        "change_id": "87ce9146-98b6-49fb-8f46-f4025611cb4f",
-        "timestamp": "2026-07-24T17:55:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "auth/login.py",
-          "auth/middleware.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 235
-      }
-    ],
-    "true_cause_id": "33a7a6f1-6e7d-4114-84f1-f005bd69c9d9",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "48fa86aa-d624-4b44-9b9c-80aa1f2a3dc7",
-    "timestamp": "2026-08-07T16:49:08.101416",
-    "service_name": "checkout-service",
-    "symptom": "latency increase",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "ba91d1a8-62ba-42e0-9217-84f227a9448c",
-        "timestamp": "2026-08-07T16:32:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "checkout/cart.py",
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 135
-      },
-      {
-        "change_id": "b4a50909-86d3-41f4-a278-0107ae526da2",
-        "timestamp": "2026-08-07T15:49:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "checkout/session.py",
-          "checkout/cart.py",
           "checkout/utils.py"
         ],
-        "change_type": "config",
-        "lines_changed": 232
+        "change_type": "dependency",
+        "lines_changed": 162
       },
       {
-        "change_id": "81465064-bcda-4623-ad17-98036c4c2cd9",
-        "timestamp": "2026-08-07T06:47:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/cart.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 255
-      },
-      {
-        "change_id": "6dd9d397-23ef-410d-a1ac-11218cedc264",
-        "timestamp": "2026-08-07T14:32:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "checkout/payment.py",
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 58
-      },
-      {
-        "change_id": "eec9e561-6b32-442e-bf99-ccfea0358a94",
-        "timestamp": "2026-08-07T10:39:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/payment.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 111
-      },
-      {
-        "change_id": "7f52745a-f030-4d25-8024-8cf369778357",
-        "timestamp": "2026-08-07T07:18:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "checkout/payment.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 138
-      }
-    ],
-    "true_cause_id": "ba91d1a8-62ba-42e0-9217-84f227a9448c",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "6205f344-07a1-4fdc-90d5-787491b753bf",
-    "timestamp": "2026-07-15T02:49:08.101416",
-    "service_name": "auth-service",
-    "symptom": "500 error rate spike",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "df23834e-3d94-44cd-b3e9-5492a7064f2b",
-        "timestamp": "2026-07-15T00:10:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 235
-      },
-      {
-        "change_id": "6beb60cf-59fc-4fe8-80ba-1b1cd5e46eb1",
-        "timestamp": "2026-07-14T21:43:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/login.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 242
-      },
-      {
-        "change_id": "c66494a1-7ba9-41cc-b98f-553ce845289f",
-        "timestamp": "2026-07-14T22:55:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/login.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 332
-      },
-      {
-        "change_id": "791189aa-8e51-4a35-aa91-2e0741d42aed",
-        "timestamp": "2026-07-15T02:36:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 292
-      },
-      {
-        "change_id": "7bd02062-d73f-4b7f-b8c8-552f886ad9b7",
-        "timestamp": "2026-07-14T18:53:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/login.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 254
-      },
-      {
-        "change_id": "4959e129-6a0a-47fd-bd0f-0e3c7de1f27c",
-        "timestamp": "2026-07-15T02:39:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/login.py",
-          "auth/middleware.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 243
-      }
-    ],
-    "true_cause_id": "791189aa-8e51-4a35-aa91-2e0741d42aed",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "6c722eb8-4017-4674-9447-44956e9fbee7",
-    "timestamp": "2026-07-17T11:49:08.101416",
-    "service_name": "checkout-service",
-    "symptom": "latency increase",
-    "severity": "low",
-    "candidate_changes": [
-      {
-        "change_id": "f523015a-81d6-43e5-ba07-0f0dc66902ac",
-        "timestamp": "2026-07-17T02:23:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/session.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 366
-      },
-      {
-        "change_id": "38b6c8ce-27d9-4b9e-86aa-e2162d54632d",
-        "timestamp": "2026-07-17T06:05:08.101416",
+        "change_id": "69177837-79b8-4265-b49f-9299e09f013f",
+        "timestamp": "2026-08-04T01:59:47.192094",
         "author": "ynakamura",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/cart.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 268
-      },
-      {
-        "change_id": "ff5405ef-1c79-407e-ac38-293065079442",
-        "timestamp": "2026-07-17T00:21:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "checkout/cart.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 175
-      },
-      {
-        "change_id": "3bcc692f-89f1-4fe9-87b5-1ca4362e3828",
-        "timestamp": "2026-07-17T05:58:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "checkout/session.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 92
-      },
-      {
-        "change_id": "66544ac1-edd4-4ce9-8b53-a34be0905775",
-        "timestamp": "2026-07-17T11:41:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "checkout/session.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 238
-      },
-      {
-        "change_id": "0729c18c-6ea7-4c0f-997a-2ab97e4ebf80",
-        "timestamp": "2026-07-17T08:53:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/session.py",
-          "checkout/payment.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 204
-      },
-      {
-        "change_id": "d44cf798-bb08-4088-8403-c2187aefc9cf",
-        "timestamp": "2026-07-17T05:07:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 57
-      },
-      {
-        "change_id": "90328cec-0081-4be1-901f-d983e7ca07e8",
-        "timestamp": "2026-07-17T02:34:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 310
-      }
-    ],
-    "true_cause_id": "66544ac1-edd4-4ce9-8b53-a34be0905775",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "328a3351-c0cc-4d32-a284-65dd963b397c",
-    "timestamp": "2026-08-04T05:49:08.101416",
-    "service_name": "checkout-service",
-    "symptom": "job failure",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "1eae1237-0556-4a15-8d13-8245e7795720",
-        "timestamp": "2026-08-04T01:05:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "checkout/payment.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 267
-      },
-      {
-        "change_id": "b35d685c-55cc-45b0-b35a-ad2f76ebd0c0",
-        "timestamp": "2026-08-04T04:50:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "checkout/session.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 198
-      },
-      {
-        "change_id": "81863235-6bf4-4c9b-9616-eb1277c5b30d",
-        "timestamp": "2026-08-04T05:39:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "checkout/session.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 200
-      },
-      {
-        "change_id": "857287e8-331e-4df0-9a1c-ecff7e407990",
-        "timestamp": "2026-08-04T01:38:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "checkout/cart.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 33
-      }
-    ],
-    "true_cause_id": "81863235-6bf4-4c9b-9616-eb1277c5b30d",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "d32034d9-da74-4304-bd84-9c8d9ad0bb1f",
-    "timestamp": "2026-07-27T23:49:08.101416",
-    "service_name": "checkout-service",
-    "symptom": "latency increase",
-    "severity": "medium",
-    "candidate_changes": [
-      {
-        "change_id": "76af8f75-48ad-4629-b92d-48a1e7029def",
-        "timestamp": "2026-07-27T15:05:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/session.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 93
-      },
-      {
-        "change_id": "ddde8263-742c-4340-ba16-729c17ad9a32",
-        "timestamp": "2026-07-27T15:32:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 50
-      },
-      {
-        "change_id": "87b65b35-8b46-426f-ab68-b04a3e258a19",
-        "timestamp": "2026-07-27T20:36:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 142
-      },
-      {
-        "change_id": "7a8f5fdf-0138-47af-9374-5a799e0e816f",
-        "timestamp": "2026-07-27T23:45:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "checkout/cart.py",
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 223
-      },
-      {
-        "change_id": "f4eb3047-3050-4410-89ec-f4403d26dffc",
-        "timestamp": "2026-07-27T12:55:08.101416",
-        "author": "rpatel",
         "files_changed": [
           "checkout/utils.py",
           "checkout/cart.py",
-          "checkout/payment.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 143
-      },
-      {
-        "change_id": "ce401937-ed38-49e2-895b-8ccef2c28638",
-        "timestamp": "2026-07-27T15:46:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "checkout/cart.py",
-          "checkout/utils.py",
           "checkout/session.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 161
-      },
-      {
-        "change_id": "932fae36-e8d1-404b-98bf-c7841a733623",
-        "timestamp": "2026-07-27T23:08:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "checkout/session.py",
-          "checkout/utils.py",
-          "checkout/payment.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 204
-      }
-    ],
-    "true_cause_id": "7a8f5fdf-0138-47af-9374-5a799e0e816f",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "4b15a803-0409-47a7-8fc4-da5fa58c7c16",
-    "timestamp": "2026-08-03T08:49:08.101416",
-    "service_name": "auth-service",
-    "symptom": "latency increase",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "fea4812c-f43b-4b96-a06a-9ef8c6b99d49",
-        "timestamp": "2026-08-03T01:39:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 354
-      },
-      {
-        "change_id": "3711616a-74d6-487c-9a32-e5c712658275",
-        "timestamp": "2026-08-03T00:37:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "auth/login.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 7
-      },
-      {
-        "change_id": "7e6c24aa-731f-44e7-8a0b-6837ab2997f8",
-        "timestamp": "2026-08-03T01:38:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "auth/tokens.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 301
-      },
-      {
-        "change_id": "1e98e74c-fb23-4235-9fbe-3f446d160195",
-        "timestamp": "2026-08-02T21:24:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/login.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 126
-      },
-      {
-        "change_id": "05d80ad1-7a72-4b00-9c0c-90dea3231c02",
-        "timestamp": "2026-08-03T02:55:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/login.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 386
-      },
-      {
-        "change_id": "f5064e8b-9592-4b3f-be9b-f8880c24226a",
-        "timestamp": "2026-08-03T08:48:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "auth/login.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 284
-      },
-      {
-        "change_id": "cbefa097-5c00-4966-af2f-0d0ff238b014",
-        "timestamp": "2026-08-03T01:06:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "auth/login.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 28
-      }
-    ],
-    "true_cause_id": "f5064e8b-9592-4b3f-be9b-f8880c24226a",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "861eb0a6-5c46-487c-96eb-d8aed54d7527",
-    "timestamp": "2026-07-13T17:49:08.101416",
-    "service_name": "search-service",
-    "symptom": "500 error rate spike",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "6db11dbd-c04c-4f02-b04a-14b75b4859ce",
-        "timestamp": "2026-07-13T15:48:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "search/index.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 289
-      },
-      {
-        "change_id": "b8834617-0426-4e9e-a2f5-65dd49e99c6d",
-        "timestamp": "2026-07-13T17:19:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 179
-      },
-      {
-        "change_id": "692a8932-cd67-46a8-b52c-3ba9f84b2256",
-        "timestamp": "2026-07-13T12:46:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "search/ranking.py",
-          "search/index.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 202
-      },
-      {
-        "change_id": "3d35462f-0944-44cf-852c-a301ae08dc4d",
-        "timestamp": "2026-07-13T10:48:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/query.py",
-          "search/ranking.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 211
-      },
-      {
-        "change_id": "e3db03ad-df3a-491b-afce-b9d3827e200c",
-        "timestamp": "2026-07-13T05:59:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/query.py",
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 212
-      },
-      {
-        "change_id": "74bd5de7-465b-456e-baac-9f5c8c90e1c6",
-        "timestamp": "2026-07-13T11:54:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/query.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 115
-      },
-      {
-        "change_id": "b7225d80-21e8-41de-a97e-d75dfc817a5b",
-        "timestamp": "2026-07-13T11:14:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 128
-      },
-      {
-        "change_id": "d668ed63-4c66-4bdc-8ad6-8cd7cd4e127d",
-        "timestamp": "2026-07-13T17:33:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "search/index.py",
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 22
-      }
-    ],
-    "true_cause_id": "d668ed63-4c66-4bdc-8ad6-8cd7cd4e127d",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "8994bc2e-08aa-4cbd-8f9d-030d1c55d745",
-    "timestamp": "2026-07-26T02:49:08.101416",
-    "service_name": "checkout-service",
-    "symptom": "latency increase",
-    "severity": "low",
-    "candidate_changes": [
-      {
-        "change_id": "176738a4-0e64-4374-93de-0e390f8ae0ee",
-        "timestamp": "2026-07-25T23:06:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "checkout/session.py",
-          "checkout/payment.py",
-          "checkout/cart.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 314
-      },
-      {
-        "change_id": "6cbb45c6-6fa5-4aca-916c-73f10206f3da",
-        "timestamp": "2026-07-25T23:00:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/session.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 87
-      },
-      {
-        "change_id": "6ffdbdc6-9483-48ea-98b0-f722bf4ce30d",
-        "timestamp": "2026-07-25T20:39:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 372
-      },
-      {
-        "change_id": "34692bb7-74ef-4bbf-9509-ab54d277386a",
-        "timestamp": "2026-07-26T02:29:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "checkout/payment.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 38
-      },
-      {
-        "change_id": "89780c3e-f2bc-4d60-a53a-ae4c45fd3bfe",
-        "timestamp": "2026-07-25T19:48:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "checkout/cart.py",
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 41
-      },
-      {
-        "change_id": "162c7ec4-1f25-4780-8f20-16425170d2cb",
-        "timestamp": "2026-07-26T00:30:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "checkout/cart.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 129
-      }
-    ],
-    "true_cause_id": "34692bb7-74ef-4bbf-9509-ab54d277386a",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "49519903-d5dd-40c7-844b-8b3d238ab12c",
-    "timestamp": "2026-07-15T04:49:08.101416",
-    "service_name": "checkout-service",
-    "symptom": "job failure",
-    "severity": "medium",
-    "candidate_changes": [
-      {
-        "change_id": "1c8185de-a3d8-4cdc-89e5-75fe3fb8aef1",
-        "timestamp": "2026-07-15T04:10:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "checkout/payment.py",
-          "checkout/cart.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 155
-      },
-      {
-        "change_id": "d623741f-c5f0-49b3-bdef-e0b1ce13151b",
-        "timestamp": "2026-07-15T01:25:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "checkout/session.py",
-          "checkout/utils.py",
-          "checkout/payment.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 308
-      },
-      {
-        "change_id": "2501c599-639d-4069-8717-7f2da4f49ca3",
-        "timestamp": "2026-07-15T01:16:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "checkout/payment.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 256
-      },
-      {
-        "change_id": "940c52c6-c970-46de-8a00-495ac43da41d",
-        "timestamp": "2026-07-14T23:48:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 294
-      },
-      {
-        "change_id": "47779aad-5fd6-477e-8afa-30db2c6aaab4",
-        "timestamp": "2026-07-14T17:08:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "checkout/session.py",
-          "checkout/cart.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 390
-      },
-      {
-        "change_id": "34f1720e-aefa-48bb-8835-efe03810d1a7",
-        "timestamp": "2026-07-15T04:05:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/payment.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 242
-      },
-      {
-        "change_id": "c2c67533-ed24-4887-9c3c-9b067f42e716",
-        "timestamp": "2026-07-15T00:14:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "checkout/cart.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 213
-      },
-      {
-        "change_id": "d208ba10-41b1-4229-9a5f-43a1a32443e9",
-        "timestamp": "2026-07-15T04:48:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/payment.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 157
-      },
-      {
-        "change_id": "ce03b1da-bd93-46cf-8322-215ba9036d72",
-        "timestamp": "2026-07-14T22:14:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 225
-      }
-    ],
-    "true_cause_id": "d208ba10-41b1-4229-9a5f-43a1a32443e9",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "17d1106c-d5f1-4436-8e74-0ef2bd707bc9",
-    "timestamp": "2026-07-18T06:49:08.101416",
-    "service_name": "search-service",
-    "symptom": "timeout spike",
-    "severity": "low",
-    "candidate_changes": [
-      {
-        "change_id": "53b9e032-e0a2-4e32-a1ff-0e36221a164d",
-        "timestamp": "2026-07-17T19:28:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "search/index.py",
-          "search/query.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 212
-      },
-      {
-        "change_id": "28b45e72-6df3-405b-b52b-d03e3bcf9125",
-        "timestamp": "2026-07-18T06:47:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 8
-      },
-      {
-        "change_id": "80e4fb61-5a97-4cf6-a003-3bb68e176f26",
-        "timestamp": "2026-07-17T22:23:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/query.py",
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 28
-      },
-      {
-        "change_id": "e8d27058-49d7-4e48-9b2a-3713826b647e",
-        "timestamp": "2026-07-18T02:23:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "search/index.py",
-          "search/query.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 192
-      },
-      {
-        "change_id": "a36c589a-b213-4186-91e2-8e06168dd076",
-        "timestamp": "2026-07-18T01:11:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 224
-      },
-      {
-        "change_id": "bf7fa978-7f19-41a6-874d-579d519f12a4",
-        "timestamp": "2026-07-18T02:34:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/index.py",
-          "search/query.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 33
-      },
-      {
-        "change_id": "9f83b487-5e3e-4114-846a-fb7dc5c638b4",
-        "timestamp": "2026-07-17T19:09:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 171
-      },
-      {
-        "change_id": "553472ab-eec5-4da6-a505-b785f3eace50",
-        "timestamp": "2026-07-17T21:59:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/index.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 218
-      },
-      {
-        "change_id": "0647d996-ab97-412b-9128-96582def18b6",
-        "timestamp": "2026-07-18T05:40:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "search/index.py",
-          "search/query.py",
-          "search/ranking.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 280
-      },
-      {
-        "change_id": "2cc353fc-0300-4d65-8b4e-349d90a22815",
-        "timestamp": "2026-07-18T06:16:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/index.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 210
-      }
-    ],
-    "true_cause_id": "28b45e72-6df3-405b-b52b-d03e3bcf9125",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "416f7990-7465-4a94-852d-7589993a3a0c",
-    "timestamp": "2026-07-20T15:49:08.101416",
-    "service_name": "auth-service",
-    "symptom": "latency increase",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "a74061aa-360a-425e-b947-aa98011246ed",
-        "timestamp": "2026-07-20T07:37:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/login.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 303
-      },
-      {
-        "change_id": "bb42f037-ef64-4308-bf0f-0cc1873ada69",
-        "timestamp": "2026-07-20T11:13:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/login.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 56
-      },
-      {
-        "change_id": "3b6513cd-aa3d-476d-86d4-fdc19d15f6d2",
-        "timestamp": "2026-07-20T15:48:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "auth/login.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 100
-      },
-      {
-        "change_id": "df873914-8ffe-4590-a61a-253d04327ae2",
-        "timestamp": "2026-07-20T13:55:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py",
-          "auth/login.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 105
-      },
-      {
-        "change_id": "b2f43540-50d3-4cf7-a5e5-2acaf6265295",
-        "timestamp": "2026-07-20T14:03:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/tokens.py",
-          "auth/login.py"
         ],
         "change_type": "config",
         "lines_changed": 21
       },
       {
-        "change_id": "23c37916-aefe-4f89-a58a-a83a32e9c6c1",
-        "timestamp": "2026-07-20T06:50:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "auth/login.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 301
-      },
-      {
-        "change_id": "e35c9a8a-23d7-4d03-b368-0444eb6f326b",
-        "timestamp": "2026-07-20T13:52:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 110
-      },
-      {
-        "change_id": "b791b306-f8c7-4d8b-8c18-adef8a3ee053",
-        "timestamp": "2026-07-20T05:31:08.101416",
+        "change_id": "6842b898-87ed-434e-887b-12b25f41c8a8",
+        "timestamp": "2026-08-03T23:23:47.192094",
         "author": "jsmith",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/login.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 33
-      },
-      {
-        "change_id": "f0446ac1-ad85-4775-9093-3f0b06075f23",
-        "timestamp": "2026-07-20T09:35:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py",
-          "auth/login.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 101
-      },
-      {
-        "change_id": "6ffbefd0-96a1-4d04-be36-73e3b5d546c5",
-        "timestamp": "2026-07-20T12:01:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 225
-      }
-    ],
-    "true_cause_id": "3b6513cd-aa3d-476d-86d4-fdc19d15f6d2",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "18689abb-c9fd-4376-896b-50462541c962",
-    "timestamp": "2026-07-18T05:49:08.101416",
-    "service_name": "auth-service",
-    "symptom": "job failure",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "9b0cfaf7-3b99-40ad-a93a-846b708eec8c",
-        "timestamp": "2026-07-18T00:44:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 339
-      },
-      {
-        "change_id": "51bf4fb9-e409-424e-9abe-eb670d59c31b",
-        "timestamp": "2026-07-18T03:35:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/login.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 400
-      },
-      {
-        "change_id": "29340e6e-bd36-46f5-8c3d-ad841e8fb8d9",
-        "timestamp": "2026-07-17T21:45:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/login.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 14
-      },
-      {
-        "change_id": "b4abb816-8d4a-46d7-98fe-49f1db7d67ae",
-        "timestamp": "2026-07-17T20:51:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py",
-          "auth/login.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 281
-      },
-      {
-        "change_id": "6f037b0d-bc59-4313-8955-97e320c0a71c",
-        "timestamp": "2026-07-18T04:48:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "auth/login.py",
-          "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 161
-      },
-      {
-        "change_id": "4005663d-ef22-4628-990c-b17457d528c6",
-        "timestamp": "2026-07-18T05:32:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 119
-      },
-      {
-        "change_id": "d4c8a189-e795-411f-84b3-a02b42c20e03",
-        "timestamp": "2026-07-18T05:29:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/login.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 303
-      },
-      {
-        "change_id": "cf4da063-2ff5-45d6-95ac-c785428a2638",
-        "timestamp": "2026-07-17T19:53:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 346
-      },
-      {
-        "change_id": "3707bcee-224f-441c-a064-19077c576035",
-        "timestamp": "2026-07-17T17:49:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "auth/tokens.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 296
-      }
-    ],
-    "true_cause_id": "4005663d-ef22-4628-990c-b17457d528c6",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "d2808846-8955-4daf-a582-556c83ab7761",
-    "timestamp": "2026-07-28T21:49:08.101416",
-    "service_name": "search-service",
-    "symptom": "job failure",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "a9368299-78bb-4b15-b17b-d562d38bc01e",
-        "timestamp": "2026-07-28T16:19:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "search/query.py",
-          "search/ranking.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 248
-      },
-      {
-        "change_id": "e5511948-556c-4fa0-af98-982fdad827d7",
-        "timestamp": "2026-07-28T14:57:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 209
-      },
-      {
-        "change_id": "c49a3b06-20e7-4bb4-b168-6e118d2f00ca",
-        "timestamp": "2026-07-28T16:03:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 112
-      },
-      {
-        "change_id": "738ad1c1-c0f4-48b3-861a-e12ba4bef6cc",
-        "timestamp": "2026-07-28T21:12:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "search/ranking.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 215
-      },
-      {
-        "change_id": "2f1e5855-8b16-4224-b92a-ac911e2e905e",
-        "timestamp": "2026-07-28T21:48:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "search/query.py",
-          "search/ranking.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 370
-      },
-      {
-        "change_id": "91384849-4cd0-49e8-894e-36d5a8a653be",
-        "timestamp": "2026-07-28T19:29:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 115
-      },
-      {
-        "change_id": "33ef0f91-53e1-48d8-a7f3-954fae2a5724",
-        "timestamp": "2026-07-28T13:50:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/index.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 327
-      },
-      {
-        "change_id": "ecc27a1b-8514-4e5e-95d5-df342e00fd48",
-        "timestamp": "2026-07-28T12:50:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 334
-      },
-      {
-        "change_id": "0ca69211-f43a-4369-8969-145491591b77",
-        "timestamp": "2026-07-28T17:32:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 29
-      },
-      {
-        "change_id": "63a4cc64-1903-4ff6-9d6e-934ce760626d",
-        "timestamp": "2026-07-28T10:31:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "search/ranking.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 72
-      }
-    ],
-    "true_cause_id": "2f1e5855-8b16-4224-b92a-ac911e2e905e",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "97406942-6cef-4fe8-9f47-17cd64920f63",
-    "timestamp": "2026-07-21T06:49:08.101416",
-    "service_name": "auth-service",
-    "symptom": "timeout spike",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "f3ccb9fa-fd99-4330-be30-65a74c9fb409",
-        "timestamp": "2026-07-21T00:46:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "auth/login.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 338
-      },
-      {
-        "change_id": "d7af0161-6b73-46be-b1ab-e78db7d5adfd",
-        "timestamp": "2026-07-21T01:12:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/login.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 379
-      },
-      {
-        "change_id": "2236965b-a19a-4f4b-9b5e-3537f07fb1e7",
-        "timestamp": "2026-07-21T03:55:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "auth/tokens.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 370
-      },
-      {
-        "change_id": "f2aca2a0-025a-4852-8630-de52283804cb",
-        "timestamp": "2026-07-21T06:32:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 89
-      },
-      {
-        "change_id": "559f7af4-1923-496a-b055-d34bcf2eec14",
-        "timestamp": "2026-07-21T04:22:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 294
-      },
-      {
-        "change_id": "0865f1d1-ce31-479b-84dc-cc6e694b2451",
-        "timestamp": "2026-07-21T00:23:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 143
-      },
-      {
-        "change_id": "bbdd44b3-783d-48c6-a677-01b58d142a0f",
-        "timestamp": "2026-07-21T00:36:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/login.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 67
-      },
-      {
-        "change_id": "46d2fc21-c73c-464d-b1bf-60ea02c4f362",
-        "timestamp": "2026-07-21T01:25:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/login.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 327
-      }
-    ],
-    "true_cause_id": "f2aca2a0-025a-4852-8630-de52283804cb",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "49c9b422-4b6c-4a89-947c-f0e4a36cfca7",
-    "timestamp": "2026-07-29T18:49:08.101416",
-    "service_name": "auth-service",
-    "symptom": "500 error rate spike",
-    "severity": "high",
-    "candidate_changes": [
-      {
-        "change_id": "6b6e3a73-f7ce-4e64-bb0e-9328deee269e",
-        "timestamp": "2026-07-29T15:06:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/login.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 243
-      },
-      {
-        "change_id": "3527349d-d23e-4b36-a0aa-fe0a9e6178a8",
-        "timestamp": "2026-07-29T09:18:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/login.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 265
-      },
-      {
-        "change_id": "7a7e633a-ca65-4ee0-9c8f-a2d36850a40b",
-        "timestamp": "2026-07-29T10:41:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 207
-      },
-      {
-        "change_id": "1c2293f3-8ac0-4f2d-be50-d76d673991f2",
-        "timestamp": "2026-07-29T07:53:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "auth/login.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 237
-      },
-      {
-        "change_id": "cf571356-3e00-47ab-b12b-ed8ee940f94d",
-        "timestamp": "2026-07-29T17:34:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "auth/middleware.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 350
-      },
-      {
-        "change_id": "81a8ef19-f94e-45b7-ae4e-5637d68a1148",
-        "timestamp": "2026-07-29T18:16:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/login.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 183
-      },
-      {
-        "change_id": "c4ff9b29-117a-4a15-87fb-0d18eb6e456f",
-        "timestamp": "2026-07-29T18:46:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 330
-      }
-    ],
-    "true_cause_id": "c4ff9b29-117a-4a15-87fb-0d18eb6e456f",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "b458253b-7477-40b1-ba88-2729d3106231",
-    "timestamp": "2026-07-21T14:49:08.101416",
-    "service_name": "checkout-service",
-    "symptom": "500 error rate spike",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "5a3c7a84-2e04-436f-aa5e-64007265efa0",
-        "timestamp": "2026-07-21T05:39:08.101416",
-        "author": "cchen",
         "files_changed": [
           "checkout/utils.py"
         ],
-        "change_type": "config",
-        "lines_changed": 234
+        "change_type": "dependency",
+        "lines_changed": 142
       },
       {
-        "change_id": "0bad4e38-e021-4257-9ced-07957aa727b0",
-        "timestamp": "2026-07-21T09:53:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "checkout/cart.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 307
-      },
-      {
-        "change_id": "deb64314-f861-4c31-892f-e2f4c56c2495",
-        "timestamp": "2026-07-21T11:07:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/payment.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 104
-      },
-      {
-        "change_id": "65ac7aa7-a781-4922-9c64-0db5dfe991df",
-        "timestamp": "2026-07-21T06:17:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "checkout/cart.py",
-          "checkout/payment.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 134
-      },
-      {
-        "change_id": "740fe63c-9773-47bb-a39e-a2dd4302c4d2",
-        "timestamp": "2026-07-21T14:45:08.101416",
-        "author": "ynakamura",
+        "change_id": "d85062c2-7bef-45ca-bc4e-5e955378b53a",
+        "timestamp": "2026-08-04T09:52:47.192094",
+        "author": "twong",
         "files_changed": [
           "checkout/utils.py",
-          "checkout/session.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 135
-      },
-      {
-        "change_id": "99c77ee4-ff84-4876-8024-b98c7d043fd6",
-        "timestamp": "2026-07-21T12:51:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "checkout/session.py",
-          "checkout/utils.py",
-          "checkout/cart.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 331
-      },
-      {
-        "change_id": "af0d054d-0034-45a7-ac51-5b73901070b3",
-        "timestamp": "2026-07-21T08:02:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 368
-      }
-    ],
-    "true_cause_id": "740fe63c-9773-47bb-a39e-a2dd4302c4d2",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "5c46c71d-2327-4f88-a17f-452da527ed89",
-    "timestamp": "2026-08-02T11:49:08.101416",
-    "service_name": "search-service",
-    "symptom": "job failure",
-    "severity": "high",
-    "candidate_changes": [
-      {
-        "change_id": "b3d9cc97-1c09-4f2b-a9aa-7f51d7a63b0a",
-        "timestamp": "2026-08-02T11:42:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "search/query.py",
-          "search/ranking.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 200
-      },
-      {
-        "change_id": "bfb1b343-e900-47d7-a5bb-dd4ff72d9815",
-        "timestamp": "2026-08-02T06:33:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 172
-      },
-      {
-        "change_id": "a9b1ba35-2f50-42b7-ac5c-65723cb4de47",
-        "timestamp": "2026-08-02T09:41:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 102
-      },
-      {
-        "change_id": "43b39195-5319-478d-8d97-773d9ebc5b92",
-        "timestamp": "2026-08-02T02:01:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 360
-      },
-      {
-        "change_id": "a618bf06-e903-4f18-a98e-1c9f101491fc",
-        "timestamp": "2026-08-02T07:31:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "search/query.py",
-          "search/index.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 147
-      },
-      {
-        "change_id": "e6b8e8d1-1745-404f-956f-4a31ec1fdd93",
-        "timestamp": "2026-08-01T23:56:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "search/query.py",
-          "search/index.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 387
-      },
-      {
-        "change_id": "dd081e32-bee0-4005-a456-c45e3810ef4f",
-        "timestamp": "2026-08-02T03:25:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/query.py",
-          "search/index.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 275
-      }
-    ],
-    "true_cause_id": "b3d9cc97-1c09-4f2b-a9aa-7f51d7a63b0a",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "f7239d26-8823-44c6-81cf-6903f68c7e8c",
-    "timestamp": "2026-08-01T13:49:08.101416",
-    "service_name": "checkout-service",
-    "symptom": "latency increase",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "6263fd60-a9e2-4c96-bdc0-5982fe1adcee",
-        "timestamp": "2026-08-01T10:33:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "checkout/session.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 175
-      },
-      {
-        "change_id": "69b72b29-5a65-4e72-8816-43224a8f3f0c",
-        "timestamp": "2026-08-01T11:18:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/payment.py",
-          "checkout/session.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 222
-      },
-      {
-        "change_id": "466003aa-ea97-4a4d-afc1-19ae88d58544",
-        "timestamp": "2026-08-01T13:21:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 214
-      },
-      {
-        "change_id": "fd4b45b3-8c4e-47da-8799-bdc07879b946",
-        "timestamp": "2026-08-01T12:08:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 293
-      },
-      {
-        "change_id": "a35cea92-feaf-439a-9381-ba415cf54ff8",
-        "timestamp": "2026-08-01T13:29:08.101416",
-        "author": "dolsen",
-        "files_changed": [
           "checkout/payment.py"
         ],
         "change_type": "code",
-        "lines_changed": 17
+        "lines_changed": 114
       },
       {
-        "change_id": "efc301d1-4b18-4bd1-b6c3-e4257913b5df",
-        "timestamp": "2026-08-01T08:26:08.101416",
+        "change_id": "47823cb1-4164-40e8-95f9-6b4e52702def",
+        "timestamp": "2026-08-04T09:13:47.192094",
         "author": "dolsen",
         "files_changed": [
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 98
-      },
-      {
-        "change_id": "dc43f4f0-4f69-4231-ae5e-9f97a40d3e4a",
-        "timestamp": "2026-08-01T13:35:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "checkout/session.py",
+          "checkout/cart.py",
+          "checkout/utils.py",
           "checkout/payment.py"
         ],
         "change_type": "config",
-        "lines_changed": 345
+        "lines_changed": 167
       },
       {
-        "change_id": "759ffb35-03f8-441c-8fd1-d38f9f77f042",
-        "timestamp": "2026-08-01T04:54:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "checkout/session.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 222
-      },
-      {
-        "change_id": "a7107783-0c33-4f7d-83e3-06b361cc25f5",
-        "timestamp": "2026-08-01T09:15:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 245
-      },
-      {
-        "change_id": "fb03e139-2b0b-4b66-bddf-ef9e7da43d62",
-        "timestamp": "2026-08-01T06:37:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 135
-      }
-    ],
-    "true_cause_id": "dc43f4f0-4f69-4231-ae5e-9f97a40d3e4a",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "edd0bec5-7474-40ae-9d6f-35dda1bc1c19",
-    "timestamp": "2026-07-24T00:49:08.101416",
-    "service_name": "search-service",
-    "symptom": "latency increase",
-    "severity": "medium",
-    "candidate_changes": [
-      {
-        "change_id": "44628d88-9e26-4779-b80e-96be02a40ca6",
-        "timestamp": "2026-07-23T13:22:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py",
-          "search/index.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 232
-      },
-      {
-        "change_id": "05187779-0c88-4dc7-846e-e8b17252d1a3",
-        "timestamp": "2026-07-23T22:32:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "search/ranking.py",
-          "search/index.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 354
-      },
-      {
-        "change_id": "a52edabc-db7c-4833-83fe-cdc632988b3b",
-        "timestamp": "2026-07-24T00:48:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 386
-      },
-      {
-        "change_id": "6f586c94-894e-42a4-a163-54c2fd33c76a",
-        "timestamp": "2026-07-23T21:10:08.101416",
+        "change_id": "fb68d016-76bb-4799-907a-3768e0097dd4",
+        "timestamp": "2026-08-03T22:50:47.192094",
         "author": "mgarcia",
         "files_changed": [
-          "search/ranking.py",
-          "search/index.py"
+          "checkout/utils.py",
+          "checkout/cart.py",
+          "checkout/payment.py"
         ],
-        "change_type": "config",
-        "lines_changed": 317
-      },
-      {
-        "change_id": "96c9a708-b299-4f13-a57b-18078359c01a",
-        "timestamp": "2026-07-23T23:21:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py",
-          "search/index.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 340
-      },
-      {
-        "change_id": "79bda8f6-f5e5-46e4-9e65-0771650f7c55",
-        "timestamp": "2026-07-23T17:35:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 397
-      },
-      {
-        "change_id": "a2014549-993e-4886-95d8-b018044e4209",
-        "timestamp": "2026-07-23T20:31:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "search/ranking.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 277
-      },
-      {
-        "change_id": "a9b8720c-dad2-4281-b1ba-03679bec9ee4",
-        "timestamp": "2026-07-23T14:46:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 320
-      },
-      {
-        "change_id": "5b9b2429-b524-4b8e-ae4c-e8efd43a2386",
-        "timestamp": "2026-07-23T14:51:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "search/index.py",
-          "search/query.py",
-          "search/ranking.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 203
+        "change_type": "dependency",
+        "lines_changed": 381
       }
     ],
-    "true_cause_id": "a52edabc-db7c-4833-83fe-cdc632988b3b",
+    "true_cause_id": "d85062c2-7bef-45ca-bc4e-5e955378b53a",
     "source": "synthetic"
   },
   {
-    "incident_id": "3b7cfe3d-ef17-4f76-9ef0-4dff433884f2",
-    "timestamp": "2026-08-04T14:49:08.101416",
-    "service_name": "search-service",
-    "symptom": "500 error rate spike",
-    "severity": "medium",
-    "candidate_changes": [
-      {
-        "change_id": "850770b0-9bef-4307-a262-847940a8909b",
-        "timestamp": "2026-08-04T11:23:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "search/query.py",
-          "search/ranking.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 316
-      },
-      {
-        "change_id": "86786dee-f20a-4818-94ff-9d1b390cd161",
-        "timestamp": "2026-08-04T09:01:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "search/index.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 285
-      },
-      {
-        "change_id": "78881f03-86e1-434d-a14f-f2ae271c4ccd",
-        "timestamp": "2026-08-04T13:13:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "search/index.py",
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 26
-      },
-      {
-        "change_id": "5d330f50-872c-4f72-adb0-018e50a227cd",
-        "timestamp": "2026-08-04T09:01:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 129
-      },
-      {
-        "change_id": "987a940b-ea91-4b91-abcc-203e5c95c7d3",
-        "timestamp": "2026-08-04T14:36:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 44
-      },
-      {
-        "change_id": "78d95a56-24bc-49bc-954e-b32e21b89287",
-        "timestamp": "2026-08-04T08:02:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/index.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 138
-      }
-    ],
-    "true_cause_id": "987a940b-ea91-4b91-abcc-203e5c95c7d3",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "a3b52558-ba3b-4f41-922f-96718330df12",
-    "timestamp": "2026-08-01T22:49:08.101416",
-    "service_name": "auth-service",
-    "symptom": "500 error rate spike",
-    "severity": "critical",
-    "candidate_changes": [
-      {
-        "change_id": "3e53429c-904c-4557-bd38-7b3772e44412",
-        "timestamp": "2026-08-01T17:40:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/middleware.py",
-          "auth/tokens.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 77
-      },
-      {
-        "change_id": "f6145b72-b680-4e1e-9e02-740739c2a37b",
-        "timestamp": "2026-08-01T11:27:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "auth/login.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 390
-      },
-      {
-        "change_id": "015f7550-be4e-4916-8537-d081e1c12177",
-        "timestamp": "2026-08-01T22:27:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "auth/tokens.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 332
-      },
-      {
-        "change_id": "26f00c56-46e6-4cdb-a384-33d3a5dfc7c5",
-        "timestamp": "2026-08-01T22:39:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "auth/login.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 270
-      },
-      {
-        "change_id": "b8b77bf8-57b6-4cc2-9671-f103fe831a99",
-        "timestamp": "2026-08-01T13:44:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 196
-      },
-      {
-        "change_id": "9c2e859f-77e4-4c81-83ae-7e3707f0740e",
-        "timestamp": "2026-08-01T12:12:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/login.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 300
-      }
-    ],
-    "true_cause_id": "26f00c56-46e6-4cdb-a384-33d3a5dfc7c5",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "45fc1e3f-3776-41d7-bb40-f0a42fe3d984",
-    "timestamp": "2026-08-05T16:49:08.101416",
-    "service_name": "search-service",
-    "symptom": "500 error rate spike",
-    "severity": "high",
-    "candidate_changes": [
-      {
-        "change_id": "21cd91e1-dfc4-4963-a670-0377181d537b",
-        "timestamp": "2026-08-05T09:55:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "search/index.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 180
-      },
-      {
-        "change_id": "857970b6-d658-4c2f-a43d-3a5853729660",
-        "timestamp": "2026-08-05T12:13:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py",
-          "search/index.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 172
-      },
-      {
-        "change_id": "26bfe7b8-4dc6-4280-aabf-d5bf24b54a55",
-        "timestamp": "2026-08-05T16:42:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "search/ranking.py",
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 61
-      },
-      {
-        "change_id": "20a607e6-2b7e-4df3-b988-505d81fc2398",
-        "timestamp": "2026-08-05T13:44:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 126
-      },
-      {
-        "change_id": "3fc36f1e-7a57-4d65-bb00-3d8443985ec7",
-        "timestamp": "2026-08-05T15:43:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "search/index.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 127
-      }
-    ],
-    "true_cause_id": "26bfe7b8-4dc6-4280-aabf-d5bf24b54a55",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "65c5b37b-ddd4-4384-a6dd-692eab63bba0",
-    "timestamp": "2026-08-02T03:49:08.101416",
+    "incident_id": "70de6165-6f8f-4a40-a093-21819ddaa76a",
+    "timestamp": "2026-08-06T09:06:47.192094",
     "service_name": "auth-service",
     "symptom": "job failure",
+    "affected_files": [
+      "auth/tokens.py",
+      "auth/login.py"
+    ],
     "severity": "high",
     "candidate_changes": [
       {
-        "change_id": "ab8c843d-d7ea-4f3b-ac46-69c113af3764",
-        "timestamp": "2026-08-01T21:49:08.101416",
+        "change_id": "b918d64c-7619-48b8-82b3-6776799bcbc4",
+        "timestamp": "2026-08-06T08:46:47.192094",
         "author": "cchen",
         "files_changed": [
-          "auth/middleware.py",
           "auth/login.py",
           "auth/tokens.py"
         ],
         "change_type": "code",
-        "lines_changed": 61
+        "lines_changed": 188
       },
       {
-        "change_id": "fc928ff9-fc6a-4286-aeee-e5bafac0fef1",
-        "timestamp": "2026-08-01T16:19:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "auth/login.py",
-          "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 267
-      },
-      {
-        "change_id": "bcb596ff-a2af-41ab-a05f-b2aeb3dd90cc",
-        "timestamp": "2026-08-02T03:46:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 24
-      },
-      {
-        "change_id": "5a5ee794-eca1-4826-9cee-f95ef9436832",
-        "timestamp": "2026-08-01T22:48:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "auth/middleware.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 374
-      }
-    ],
-    "true_cause_id": "bcb596ff-a2af-41ab-a05f-b2aeb3dd90cc",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "d1aac1bc-cbee-4ca6-8c61-7c20c191ce0c",
-    "timestamp": "2026-07-23T05:49:08.101416",
-    "service_name": "search-service",
-    "symptom": "latency increase",
-    "severity": "high",
-    "candidate_changes": [
-      {
-        "change_id": "d3aca4f4-e87c-47dc-af02-760b0fc7e9d9",
-        "timestamp": "2026-07-22T21:01:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "search/index.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 288
-      },
-      {
-        "change_id": "6a164a87-6397-402b-ba18-8f71caf73998",
-        "timestamp": "2026-07-23T03:31:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/ranking.py",
-          "search/index.py",
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 36
-      },
-      {
-        "change_id": "a9a039f5-ddca-4acb-a810-2a5603d30e0e",
-        "timestamp": "2026-07-22T22:49:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "search/index.py",
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 332
-      },
-      {
-        "change_id": "c0fbd120-5fc8-45a0-b334-56cd87be6c73",
-        "timestamp": "2026-07-22T18:17:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/ranking.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 297
-      },
-      {
-        "change_id": "976c396b-2c4d-447b-91c6-7f7c72efaf79",
-        "timestamp": "2026-07-22T18:02:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 219
-      },
-      {
-        "change_id": "dfe02f7b-8a9f-46af-b3d6-730071070638",
-        "timestamp": "2026-07-23T05:40:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/index.py",
-          "search/ranking.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 166
-      }
-    ],
-    "true_cause_id": "dfe02f7b-8a9f-46af-b3d6-730071070638",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "5de717a9-63e0-4df8-9003-d6e1fbb7736b",
-    "timestamp": "2026-08-04T18:49:08.101416",
-    "service_name": "auth-service",
-    "symptom": "latency increase",
-    "severity": "medium",
-    "candidate_changes": [
-      {
-        "change_id": "38c51b72-8f65-4a0b-a2e5-8f9ecdeadd26",
-        "timestamp": "2026-08-04T13:51:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "auth/login.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 79
-      },
-      {
-        "change_id": "baa54bd4-4234-4b14-9cf7-cb69ba23024a",
-        "timestamp": "2026-08-04T15:07:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 398
-      },
-      {
-        "change_id": "acc1ed79-edd6-4dcc-a88c-9fc2ca6ea6dd",
-        "timestamp": "2026-08-04T09:51:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "auth/login.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 164
-      },
-      {
-        "change_id": "b743bef5-5972-48b5-8e91-12b3f8ba5cec",
-        "timestamp": "2026-08-04T07:12:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "auth/tokens.py",
-          "auth/login.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 11
-      },
-      {
-        "change_id": "97e78d24-f844-45e1-9172-a235466563c5",
-        "timestamp": "2026-08-04T15:59:08.101416",
+        "change_id": "f35fa31f-5b01-4d8d-90ea-9a6b91ae1905",
+        "timestamp": "2026-08-06T01:27:47.192094",
         "author": "dolsen",
         "files_changed": [
           "auth/middleware.py",
           "auth/tokens.py"
         ],
-        "change_type": "code",
-        "lines_changed": 352
+        "change_type": "dependency",
+        "lines_changed": 290
       },
       {
-        "change_id": "bfa4cfdc-74c7-429a-a10d-f5b219e7ef1d",
-        "timestamp": "2026-08-04T18:32:08.101416",
+        "change_id": "b0fee54a-571f-4716-bf33-c211730497f8",
+        "timestamp": "2026-08-06T08:29:47.192094",
         "author": "mgarcia",
         "files_changed": [
+          "auth/middleware.py",
           "auth/tokens.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 342
-      },
-      {
-        "change_id": "837277f9-c62d-471f-bb45-64ab85613159",
-        "timestamp": "2026-08-04T13:44:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "auth/login.py",
-          "auth/middleware.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 50
-      }
-    ],
-    "true_cause_id": "bfa4cfdc-74c7-429a-a10d-f5b219e7ef1d",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "2b06ca08-91f0-4a92-bdcd-8cbcb7d048f6",
-    "timestamp": "2026-08-04T11:49:08.101416",
-    "service_name": "checkout-service",
-    "symptom": "latency increase",
-    "severity": "low",
-    "candidate_changes": [
-      {
-        "change_id": "e0f92518-3335-4cfe-8832-45e7e2f0e772",
-        "timestamp": "2026-08-04T01:19:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/cart.py",
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 384
-      },
-      {
-        "change_id": "0169e54c-94b4-4263-9490-665b1fe39d90",
-        "timestamp": "2026-08-04T05:24:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "checkout/payment.py",
-          "checkout/session.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 177
-      },
-      {
-        "change_id": "92c6a70c-1297-4bcf-b7ae-51bef0806b0d",
-        "timestamp": "2026-08-04T04:31:08.101416",
-        "author": "akumar",
-        "files_changed": [
-          "checkout/cart.py",
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 108
-      },
-      {
-        "change_id": "94864db1-6d0d-4869-ba45-7803d66a1858",
-        "timestamp": "2026-08-04T11:29:08.101416",
-        "author": "dolsen",
-        "files_changed": [
-          "checkout/cart.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 235
-      },
-      {
-        "change_id": "00d0fa66-284e-4638-ae69-fbf8123b5d53",
-        "timestamp": "2026-08-04T02:11:08.101416",
-        "author": "ynakamura",
-        "files_changed": [
-          "checkout/utils.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 232
-      },
-      {
-        "change_id": "a15c3b85-d9ce-4592-aee8-8533ee0c83e1",
-        "timestamp": "2026-08-04T00:30:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/payment.py",
-          "checkout/cart.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 277
-      },
-      {
-        "change_id": "57dbe2a1-be74-4851-95a5-080941831100",
-        "timestamp": "2026-08-04T07:28:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/cart.py"
-        ],
-        "change_type": "dependancy",
-        "lines_changed": 181
-      },
-      {
-        "change_id": "1807ac98-144b-4616-9ede-bebd6310f6bd",
-        "timestamp": "2026-08-04T11:14:08.101416",
-        "author": "mgarcia",
-        "files_changed": [
-          "checkout/utils.py",
-          "checkout/session.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 335
-      },
-      {
-        "change_id": "53531b3c-be6a-4584-90fe-704be6246d10",
-        "timestamp": "2026-08-04T02:31:08.101416",
-        "author": "jsmith",
-        "files_changed": [
-          "checkout/payment.py",
-          "checkout/utils.py"
-        ],
-        "change_type": "config",
-        "lines_changed": 132
-      },
-      {
-        "change_id": "8c3e4cc1-2fc9-4cab-8c7a-77bad25e6562",
-        "timestamp": "2026-08-04T10:33:08.101416",
-        "author": "twong",
-        "files_changed": [
-          "checkout/session.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 377
-      }
-    ],
-    "true_cause_id": "94864db1-6d0d-4869-ba45-7803d66a1858",
-    "source": "synthetic"
-  },
-  {
-    "incident_id": "a140dc51-3f6b-4a76-9b88-57c128385614",
-    "timestamp": "2026-07-24T17:49:08.101416",
-    "service_name": "search-service",
-    "symptom": "job failure",
-    "severity": "medium",
-    "candidate_changes": [
-      {
-        "change_id": "faca1955-756e-4f50-8af1-244c0ffc205e",
-        "timestamp": "2026-07-24T17:29:08.101416",
-        "author": "cchen",
-        "files_changed": [
-          "search/index.py",
-          "search/query.py"
-        ],
-        "change_type": "code",
-        "lines_changed": 225
-      },
-      {
-        "change_id": "9138da2b-4c54-41ee-98a5-3c75be007697",
-        "timestamp": "2026-07-24T09:14:08.101416",
-        "author": "rpatel",
-        "files_changed": [
-          "search/ranking.py",
-          "search/index.py"
+          "auth/login.py"
         ],
         "change_type": "config",
         "lines_changed": 105
       },
       {
-        "change_id": "4377041e-657a-4b87-9b82-cb6ad3cdd14c",
-        "timestamp": "2026-07-24T10:41:08.101416",
-        "author": "ynakamura",
+        "change_id": "c5e11ae0-9add-4128-ab9d-9c2105db941a",
+        "timestamp": "2026-08-06T04:25:47.192094",
+        "author": "mgarcia",
         "files_changed": [
-          "search/query.py",
-          "search/index.py"
+          "auth/login.py",
+          "auth/tokens.py",
+          "auth/middleware.py"
         ],
-        "change_type": "dependancy",
-        "lines_changed": 179
+        "change_type": "code",
+        "lines_changed": 78
       },
       {
-        "change_id": "5dfdeeec-c703-4653-bd2a-f86ef2861ef6",
-        "timestamp": "2026-07-24T14:17:08.101416",
+        "change_id": "4d5567c7-faf1-45c9-94af-8da215012475",
+        "timestamp": "2026-08-06T05:31:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "auth/login.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 293
+      },
+      {
+        "change_id": "b9437b47-4313-4cb7-bffe-6c93209e7e0f",
+        "timestamp": "2026-08-06T01:44:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/login.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 146
+      },
+      {
+        "change_id": "fadb742b-a2fd-4666-9b3b-5989fff6560e",
+        "timestamp": "2026-08-06T03:06:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 41
+      },
+      {
+        "change_id": "fe69933f-535c-49f2-8879-9fa6ad1f5966",
+        "timestamp": "2026-08-06T07:53:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "auth/login.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 334
+      },
+      {
+        "change_id": "2212001a-6286-43f1-af53-38c9b54b454a",
+        "timestamp": "2026-08-06T05:18:47.192094",
         "author": "mgarcia",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 150
+      },
+      {
+        "change_id": "93e3c138-2ce3-448d-aecd-456e86e58c61",
+        "timestamp": "2026-08-06T02:13:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "auth/login.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 91
+      }
+    ],
+    "true_cause_id": "b918d64c-7619-48b8-82b3-6776799bcbc4",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "b37b58f4-befc-4195-a73e-447da79fc107",
+    "timestamp": "2026-08-07T20:06:47.192094",
+    "service_name": "auth-service",
+    "symptom": "timeout spike",
+    "affected_files": [
+      "auth/tokens.py",
+      "auth/middleware.py"
+    ],
+    "severity": "low",
+    "candidate_changes": [
+      {
+        "change_id": "fe24c68b-3dc9-4e61-a504-c2a9c541baab",
+        "timestamp": "2026-08-07T14:39:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 352
+      },
+      {
+        "change_id": "d12fd474-3bf3-4a98-887f-89583cc479c0",
+        "timestamp": "2026-08-07T19:52:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 335
+      },
+      {
+        "change_id": "b010e6e4-3adc-471e-a824-048b58812d5f",
+        "timestamp": "2026-08-07T17:56:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "auth/login.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 336
+      },
+      {
+        "change_id": "4d4ede1b-1920-4804-915e-d66e1edc0e81",
+        "timestamp": "2026-08-07T16:54:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "auth/login.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 339
+      },
+      {
+        "change_id": "9205f758-8cfd-458b-a68d-8ddb13c986f1",
+        "timestamp": "2026-08-07T08:34:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "auth/middleware.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 70
+      },
+      {
+        "change_id": "0fb4cc99-113e-45bc-a65b-fc2b1f918800",
+        "timestamp": "2026-08-07T17:10:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 400
+      },
+      {
+        "change_id": "aa938ac8-3513-45ad-937a-79e4c1996f51",
+        "timestamp": "2026-08-07T13:43:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 37
+      }
+    ],
+    "true_cause_id": "d12fd474-3bf3-4a98-887f-89583cc479c0",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "8e363ad2-3731-40e0-b3d3-70a77cc96ed8",
+    "timestamp": "2026-08-01T22:06:47.192094",
+    "service_name": "auth-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "auth/tokens.py",
+      "auth/login.py"
+    ],
+    "severity": "low",
+    "candidate_changes": [
+      {
+        "change_id": "b4c14724-4e03-4c7f-94e5-6c4525dd7e34",
+        "timestamp": "2026-08-01T15:45:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "auth/login.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 72
+      },
+      {
+        "change_id": "90185b40-f61d-46b2-9976-baea0396fa47",
+        "timestamp": "2026-08-01T14:08:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 395
+      },
+      {
+        "change_id": "34958b65-a1ba-43ef-a4ee-0fb82006206a",
+        "timestamp": "2026-08-01T22:04:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/login.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 130
+      },
+      {
+        "change_id": "6697fe65-f468-4b5e-b15c-f8e8e0ea4328",
+        "timestamp": "2026-08-01T12:53:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "auth/tokens.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 333
+      },
+      {
+        "change_id": "4e64e945-b078-457d-9182-45a7c6585620",
+        "timestamp": "2026-08-01T19:51:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/login.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 335
+      },
+      {
+        "change_id": "b3c23f4c-d754-4e09-957f-b2111bfc2d36",
+        "timestamp": "2026-08-01T18:37:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 36
+      },
+      {
+        "change_id": "5d3889fa-77e9-48bb-a5a1-75b490e9df2f",
+        "timestamp": "2026-08-01T14:47:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "auth/middleware.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 136
+      }
+    ],
+    "true_cause_id": "34958b65-a1ba-43ef-a4ee-0fb82006206a",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "2f8ae57c-9ac4-4ef7-977f-93dcd3ae97e6",
+    "timestamp": "2026-08-11T18:06:47.192094",
+    "service_name": "checkout-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "checkout/utils.py",
+      "checkout/cart.py"
+    ],
+    "severity": "critical",
+    "candidate_changes": [
+      {
+        "change_id": "2a042e6a-571e-4f96-addb-b60148b25f7a",
+        "timestamp": "2026-08-11T17:41:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "checkout/utils.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 23
+      },
+      {
+        "change_id": "e168dd20-85ea-4649-9322-5d9c01c8c9eb",
+        "timestamp": "2026-08-11T10:46:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "checkout/payment.py",
+          "checkout/utils.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 90
+      },
+      {
+        "change_id": "63b123a6-b288-4207-b804-7fdd9c2c5059",
+        "timestamp": "2026-08-11T12:59:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "checkout/payment.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 51
+      },
+      {
+        "change_id": "be383727-5ffd-43bc-960a-2461cb061bdc",
+        "timestamp": "2026-08-11T17:53:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/cart.py",
+          "checkout/utils.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 136
+      }
+    ],
+    "true_cause_id": "be383727-5ffd-43bc-960a-2461cb061bdc",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "68962fd9-28d4-4b67-a0a6-f0646fab2bb6",
+    "timestamp": "2026-07-27T08:06:47.192094",
+    "service_name": "auth-service",
+    "symptom": "timeout spike",
+    "affected_files": [
+      "auth/tokens.py",
+      "auth/middleware.py"
+    ],
+    "severity": "high",
+    "candidate_changes": [
+      {
+        "change_id": "552eff28-68b1-41e3-b32a-4c39f4692130",
+        "timestamp": "2026-07-26T23:41:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/login.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 129
+      },
+      {
+        "change_id": "d07ae73a-4dec-466b-9668-238552bc0322",
+        "timestamp": "2026-07-27T05:43:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "auth/login.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 127
+      },
+      {
+        "change_id": "43e12fbf-80b9-44d6-9db5-25d96ab7b7ae",
+        "timestamp": "2026-07-27T08:05:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 315
+      },
+      {
+        "change_id": "afaa7dab-dd84-4260-9141-1a876710cfe7",
+        "timestamp": "2026-07-26T20:12:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "auth/login.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 173
+      },
+      {
+        "change_id": "277eb2ac-1232-4ef6-9a02-31631d29a42a",
+        "timestamp": "2026-07-27T06:08:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "auth/login.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 249
+      },
+      {
+        "change_id": "cfb6189c-081d-4fb4-96b6-45d84bc20323",
+        "timestamp": "2026-07-27T07:47:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "auth/login.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 301
+      }
+    ],
+    "true_cause_id": "43e12fbf-80b9-44d6-9db5-25d96ab7b7ae",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "85cf47b9-a5b4-4aff-89ab-bc4a0ef7af4a",
+    "timestamp": "2026-08-04T04:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "latency increase",
+    "affected_files": [
+      "search/ranking.py",
+      "search/index.py"
+    ],
+    "severity": "low",
+    "candidate_changes": [
+      {
+        "change_id": "8ee9d70f-d0c6-4b9b-8c51-8bc2c9e2aec8",
+        "timestamp": "2026-08-03T17:05:47.192094",
+        "author": "akumar",
         "files_changed": [
           "search/index.py",
           "search/ranking.py"
         ],
         "change_type": "config",
-        "lines_changed": 209
+        "lines_changed": 321
       },
       {
-        "change_id": "4d410fc3-bf40-438b-a616-d5c627a3ebca",
-        "timestamp": "2026-07-24T11:34:08.101416",
+        "change_id": "c2fdc3d1-fe11-4c53-94ee-a6cbfe6247ca",
+        "timestamp": "2026-08-03T19:00:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 313
+      },
+      {
+        "change_id": "642c35f1-c8ad-45db-a805-423e2438c7a8",
+        "timestamp": "2026-08-03T20:21:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py",
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 291
+      },
+      {
+        "change_id": "0e8b0eb4-f264-47d8-a424-0560cd38f856",
+        "timestamp": "2026-08-03T16:45:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 321
+      },
+      {
+        "change_id": "1860792f-d8cc-4bc1-95d3-454c76763b9c",
+        "timestamp": "2026-08-04T03:53:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 74
+      },
+      {
+        "change_id": "eb61548e-763b-44bb-98b2-264addb15a9f",
+        "timestamp": "2026-08-03T21:07:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py",
+          "search/query.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 370
+      },
+      {
+        "change_id": "65e4180d-8c93-4357-9abb-128a253a1ff7",
+        "timestamp": "2026-08-03T21:46:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 197
+      },
+      {
+        "change_id": "6eaf8624-7b52-488a-8167-2127fcd40002",
+        "timestamp": "2026-08-03T20:08:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/index.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 7
+      },
+      {
+        "change_id": "c1cd23ad-fb89-4e2d-8430-e76189707189",
+        "timestamp": "2026-08-03T18:48:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 358
+      },
+      {
+        "change_id": "60f4a0ad-5e4d-4cca-bba2-0de04fd846ee",
+        "timestamp": "2026-08-04T02:04:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 103
+      }
+    ],
+    "true_cause_id": "1860792f-d8cc-4bc1-95d3-454c76763b9c",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "f0286345-0870-4a95-9d49-2a8228871fef",
+    "timestamp": "2026-08-01T13:06:47.192094",
+    "service_name": "checkout-service",
+    "symptom": "latency increase",
+    "affected_files": [
+      "checkout/session.py",
+      "checkout/cart.py"
+    ],
+    "severity": "low",
+    "candidate_changes": [
+      {
+        "change_id": "ab1fb94d-1ba8-42ba-be74-afa090b5101b",
+        "timestamp": "2026-08-01T11:53:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "checkout/session.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 350
+      },
+      {
+        "change_id": "925137ea-6e6a-4f8f-8b9b-b96109bbfded",
+        "timestamp": "2026-08-01T01:22:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "checkout/utils.py",
+          "checkout/cart.py",
+          "checkout/payment.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 359
+      },
+      {
+        "change_id": "ab00800f-8764-4811-9e3d-067d91483324",
+        "timestamp": "2026-08-01T12:58:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "checkout/session.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 83
+      },
+      {
+        "change_id": "ca1ee1bf-82ae-4c07-b839-ffbf702a3145",
+        "timestamp": "2026-08-01T08:22:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "checkout/payment.py",
+          "checkout/session.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 53
+      },
+      {
+        "change_id": "117242d1-633c-4ea5-b240-7711d80865d8",
+        "timestamp": "2026-08-01T09:16:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "checkout/cart.py",
+          "checkout/utils.py",
+          "checkout/payment.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 28
+      },
+      {
+        "change_id": "5d853890-6341-479e-9a83-7d29eb624fc4",
+        "timestamp": "2026-08-01T05:22:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "checkout/payment.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 178
+      },
+      {
+        "change_id": "f5110d0d-22ee-4459-9ec7-1db807bf8204",
+        "timestamp": "2026-08-01T08:03:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "checkout/cart.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 48
+      },
+      {
+        "change_id": "f78e498a-0844-4e2b-9164-18e9b14b86b1",
+        "timestamp": "2026-08-01T10:12:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/utils.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 88
+      },
+      {
+        "change_id": "c14eda42-739b-49e7-946e-8d5cf7492c63",
+        "timestamp": "2026-08-01T10:39:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "checkout/session.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 249
+      },
+      {
+        "change_id": "35f6f46e-4569-4aed-8362-381556b3a24e",
+        "timestamp": "2026-08-01T03:51:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/cart.py",
+          "checkout/payment.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 314
+      }
+    ],
+    "true_cause_id": "ab00800f-8764-4811-9e3d-067d91483324",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "d15267fe-41e9-413c-aaf3-71a78d9f18b1",
+    "timestamp": "2026-07-24T17:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "timeout spike",
+    "affected_files": [
+      "search/index.py",
+      "search/ranking.py"
+    ],
+    "severity": "critical",
+    "candidate_changes": [
+      {
+        "change_id": "b715e220-9894-4fa5-8290-18c12977346c",
+        "timestamp": "2026-07-24T16:24:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 294
+      },
+      {
+        "change_id": "c140b5fb-4e93-4bee-8b37-43fc488f4d1e",
+        "timestamp": "2026-07-24T16:59:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 215
+      },
+      {
+        "change_id": "c725019c-458e-4908-8856-0e915076043f",
+        "timestamp": "2026-07-24T11:59:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "search/query.py",
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 72
+      },
+      {
+        "change_id": "07766d33-1428-40ab-b679-2e0495a0023b",
+        "timestamp": "2026-07-24T14:47:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 50
+      },
+      {
+        "change_id": "624769b9-12aa-4bd6-9b6d-5eeccdb51054",
+        "timestamp": "2026-07-24T14:07:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 146
+      },
+      {
+        "change_id": "dc1d4b93-e162-4627-9619-42f44e6637f8",
+        "timestamp": "2026-07-24T16:02:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 392
+      },
+      {
+        "change_id": "c1ee8270-9210-40cb-891d-4580acece595",
+        "timestamp": "2026-07-24T11:14:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "search/query.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 299
+      },
+      {
+        "change_id": "415cdd46-7afe-4841-bf43-b5d7a4918538",
+        "timestamp": "2026-07-24T12:45:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 201
+      },
+      {
+        "change_id": "3a32b679-e630-4b1e-92bf-6436ad9a751f",
+        "timestamp": "2026-07-24T13:52:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 200
+      },
+      {
+        "change_id": "bc370fa0-2d53-46d5-a9bf-3c1c3b75c1af",
+        "timestamp": "2026-07-24T10:09:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 115
+      }
+    ],
+    "true_cause_id": "c140b5fb-4e93-4bee-8b37-43fc488f4d1e",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "d320b0a7-75e0-4506-afa1-18fc6098a801",
+    "timestamp": "2026-07-30T19:06:47.192094",
+    "service_name": "checkout-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "checkout/payment.py",
+      "checkout/cart.py"
+    ],
+    "severity": "high",
+    "candidate_changes": [
+      {
+        "change_id": "c4cc497a-e86e-4f30-9755-3477128abcc9",
+        "timestamp": "2026-07-30T14:12:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/payment.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 379
+      },
+      {
+        "change_id": "a5b3a18d-3d76-4de6-8cd5-b5b6ad9c6370",
+        "timestamp": "2026-07-30T18:52:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "checkout/payment.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 249
+      },
+      {
+        "change_id": "123bfa05-e135-4e5a-a812-75c145e6fa73",
+        "timestamp": "2026-07-30T11:44:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/cart.py",
+          "checkout/utils.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 241
+      },
+      {
+        "change_id": "f101f8d2-c7e3-44b5-9a65-3f65f97a855e",
+        "timestamp": "2026-07-30T14:39:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "checkout/session.py",
+          "checkout/utils.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 225
+      },
+      {
+        "change_id": "2c4bb631-90cf-4f81-b0dc-be454e24794e",
+        "timestamp": "2026-07-30T07:21:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/utils.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 358
+      },
+      {
+        "change_id": "f5369272-25e5-4850-922b-f929bd8fc641",
+        "timestamp": "2026-07-30T11:47:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "checkout/utils.py",
+          "checkout/session.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 81
+      },
+      {
+        "change_id": "9a0ba834-edbf-4409-831d-87b2c82c5fde",
+        "timestamp": "2026-07-30T13:25:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "checkout/session.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 315
+      }
+    ],
+    "true_cause_id": "a5b3a18d-3d76-4de6-8cd5-b5b6ad9c6370",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "194ee685-61b7-43ed-a0d8-0a2bb4961881",
+    "timestamp": "2026-07-20T10:06:47.192094",
+    "service_name": "checkout-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "checkout/session.py",
+      "checkout/utils.py"
+    ],
+    "severity": "medium",
+    "candidate_changes": [
+      {
+        "change_id": "0d37f561-e8ee-4a7a-8d10-cd7048204801",
+        "timestamp": "2026-07-20T05:20:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "checkout/session.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 115
+      },
+      {
+        "change_id": "602dcee0-1c19-4d4a-a5cf-d07756cfab96",
+        "timestamp": "2026-07-20T00:58:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "checkout/payment.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 258
+      },
+      {
+        "change_id": "3551aab6-6287-452b-992d-02f3e52c3ee2",
+        "timestamp": "2026-07-20T09:49:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "checkout/session.py",
+          "checkout/utils.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 342
+      },
+      {
+        "change_id": "93c6ab03-807a-44cf-a659-bf9b1d18c83f",
+        "timestamp": "2026-07-20T01:08:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/session.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 19
+      },
+      {
+        "change_id": "a1933665-7953-4497-97be-470844ab7e8b",
+        "timestamp": "2026-07-20T09:45:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "checkout/session.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 399
+      },
+      {
+        "change_id": "e4d7149e-41ef-41a8-85db-bb0eac67ff96",
+        "timestamp": "2026-07-20T00:39:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "checkout/session.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 387
+      }
+    ],
+    "true_cause_id": "3551aab6-6287-452b-992d-02f3e52c3ee2",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "6aecd3f9-5d0a-424b-ad42-149552a68cbb",
+    "timestamp": "2026-08-16T09:06:47.192094",
+    "service_name": "auth-service",
+    "symptom": "timeout spike",
+    "affected_files": [
+      "auth/middleware.py",
+      "auth/login.py"
+    ],
+    "severity": "high",
+    "candidate_changes": [
+      {
+        "change_id": "2c203e3c-2823-42c3-8632-ca2e2283699b",
+        "timestamp": "2026-08-16T03:19:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 397
+      },
+      {
+        "change_id": "b6912351-1df8-4134-b97f-690beb6f6a60",
+        "timestamp": "2026-08-16T05:24:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 222
+      },
+      {
+        "change_id": "29809cd4-e2d3-4914-aa9f-6c48cdd095b7",
+        "timestamp": "2026-08-16T08:48:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 232
+      },
+      {
+        "change_id": "ff440a2f-21ad-4d09-89e0-16133c522be7",
+        "timestamp": "2026-08-15T23:02:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 139
+      }
+    ],
+    "true_cause_id": "29809cd4-e2d3-4914-aa9f-6c48cdd095b7",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "7f192dc6-5670-415d-87d1-e8076835c34b",
+    "timestamp": "2026-08-04T01:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "500 error rate spike",
+    "affected_files": [
+      "search/index.py",
+      "search/ranking.py"
+    ],
+    "severity": "low",
+    "candidate_changes": [
+      {
+        "change_id": "ead6658f-7df2-48a5-81d7-3248db89cfcc",
+        "timestamp": "2026-08-03T23:32:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 75
+      },
+      {
+        "change_id": "871be2ad-d89a-4e00-8043-c9eb8b78bcfc",
+        "timestamp": "2026-08-03T19:58:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 73
+      },
+      {
+        "change_id": "8d104cb5-befb-4fb4-bd33-866c4d72828f",
+        "timestamp": "2026-08-03T20:03:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/ranking.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 363
+      },
+      {
+        "change_id": "04d92e37-def8-427f-91b1-9ef07a4e6784",
+        "timestamp": "2026-08-03T14:49:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 58
+      },
+      {
+        "change_id": "dfa39e80-539c-4766-be5d-200105944b56",
+        "timestamp": "2026-08-04T00:41:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 326
+      },
+      {
+        "change_id": "9639303b-c8f8-48ca-b1bc-581fe2640645",
+        "timestamp": "2026-08-03T14:29:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 297
+      },
+      {
+        "change_id": "aebea112-fb0f-45a2-b1d0-937ff5524b58",
+        "timestamp": "2026-08-04T01:04:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 371
+      }
+    ],
+    "true_cause_id": "aebea112-fb0f-45a2-b1d0-937ff5524b58",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "a4daf06c-4281-45ac-8200-4df98be92794",
+    "timestamp": "2026-07-19T08:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "search/query.py",
+      "search/index.py"
+    ],
+    "severity": "critical",
+    "candidate_changes": [
+      {
+        "change_id": "a9484944-fd1c-429f-b918-da89969c18cc",
+        "timestamp": "2026-07-19T06:28:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "search/index.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 128
+      },
+      {
+        "change_id": "df42b7f0-2b06-48f4-a5e0-2006e3e7192b",
+        "timestamp": "2026-07-19T04:12:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "search/query.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 77
+      },
+      {
+        "change_id": "72059897-7f19-42dc-8737-6460d465b408",
+        "timestamp": "2026-07-19T08:04:47.192094",
         "author": "jsmith",
         "files_changed": [
           "search/ranking.py",
@@ -2552,74 +1258,1560 @@
           "search/index.py"
         ],
         "change_type": "config",
-        "lines_changed": 260
+        "lines_changed": 370
+      },
+      {
+        "change_id": "1e63411b-83dc-45e6-8998-bb76c12d3594",
+        "timestamp": "2026-07-19T07:48:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 318
+      },
+      {
+        "change_id": "7af9fca0-e93f-41d4-9f07-bd9b38af7015",
+        "timestamp": "2026-07-18T20:33:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 68
+      },
+      {
+        "change_id": "d0b30cee-76ab-49ca-96ae-62ed7565eb09",
+        "timestamp": "2026-07-19T03:23:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 346
+      },
+      {
+        "change_id": "9206957d-b4a6-409a-8a6e-01036fe07f9c",
+        "timestamp": "2026-07-19T02:12:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py",
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 82
+      },
+      {
+        "change_id": "14c2b873-b39b-48d2-9bab-e49b673d1ef2",
+        "timestamp": "2026-07-19T07:07:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py",
+          "search/ranking.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 15
       }
     ],
-    "true_cause_id": "faca1955-756e-4f50-8af1-244c0ffc205e",
+    "true_cause_id": "1e63411b-83dc-45e6-8998-bb76c12d3594",
     "source": "synthetic"
   },
   {
-    "incident_id": "4cdfc619-f926-41ac-9925-f077809c2c93",
-    "timestamp": "2026-08-03T04:49:08.101416",
+    "incident_id": "543ee22f-36ee-46af-abc1-f748a8383b3e",
+    "timestamp": "2026-08-10T11:06:47.192094",
     "service_name": "auth-service",
-    "symptom": "latency increase",
-    "severity": "critical",
+    "symptom": "job failure",
+    "affected_files": [
+      "auth/login.py",
+      "auth/middleware.py"
+    ],
+    "severity": "high",
     "candidate_changes": [
       {
-        "change_id": "e8265da2-d247-4493-bdc3-96c068522fef",
-        "timestamp": "2026-08-02T17:52:08.101416",
-        "author": "akumar",
+        "change_id": "a2eefda4-f9b8-4a72-8a84-9bc17a5cabc2",
+        "timestamp": "2026-08-10T07:37:47.192094",
+        "author": "cchen",
         "files_changed": [
           "auth/login.py",
+          "auth/middleware.py",
           "auth/tokens.py"
         ],
         "change_type": "code",
-        "lines_changed": 296
+        "lines_changed": 202
       },
       {
-        "change_id": "9e44b298-fa0f-45bd-a5a0-9c36eb3a09bd",
-        "timestamp": "2026-08-03T04:30:08.101416",
+        "change_id": "8be417fc-21dd-4ba2-9237-9a464a73161a",
+        "timestamp": "2026-08-10T08:10:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "auth/login.py",
+          "auth/middleware.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 248
+      },
+      {
+        "change_id": "0d723649-202b-4a04-a28e-c763a8d32bc4",
+        "timestamp": "2026-08-10T06:51:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "auth/login.py",
+          "auth/middleware.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 233
+      },
+      {
+        "change_id": "e8ae1048-1761-4eae-bf3b-86b56c1d188e",
+        "timestamp": "2026-08-10T09:42:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/tokens.py",
+          "auth/login.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 213
+      },
+      {
+        "change_id": "014670e0-84ee-46fa-aab8-a283fed29076",
+        "timestamp": "2026-08-10T10:49:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "auth/tokens.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 263
+      },
+      {
+        "change_id": "0c4f501f-b15a-4102-921d-10ffbd5861ec",
+        "timestamp": "2026-08-10T10:53:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 260
+      },
+      {
+        "change_id": "1b959425-9d65-4dba-90bf-7488f6d6f04e",
+        "timestamp": "2026-08-10T05:57:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "auth/middleware.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 272
+      },
+      {
+        "change_id": "47127e03-d55b-44c3-a203-f351e608a90d",
+        "timestamp": "2026-08-10T00:05:47.192094",
         "author": "dolsen",
         "files_changed": [
           "auth/middleware.py"
         ],
         "change_type": "code",
+        "lines_changed": 168
+      },
+      {
+        "change_id": "7d72dbe3-0695-496c-9649-ee0e4d6a0544",
+        "timestamp": "2026-08-10T02:23:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "auth/tokens.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 273
+      },
+      {
+        "change_id": "3dd38015-5e28-4ecb-abd6-57ab47f3552c",
+        "timestamp": "2026-08-10T04:16:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 184
+      }
+    ],
+    "true_cause_id": "0c4f501f-b15a-4102-921d-10ffbd5861ec",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "3d4e48a1-70eb-42d1-b006-e66b2fa7b15c",
+    "timestamp": "2026-07-21T23:06:47.192094",
+    "service_name": "checkout-service",
+    "symptom": "timeout spike",
+    "affected_files": [
+      "checkout/session.py",
+      "checkout/cart.py"
+    ],
+    "severity": "medium",
+    "candidate_changes": [
+      {
+        "change_id": "db46e712-75ea-4042-9f9f-87776e5a71df",
+        "timestamp": "2026-07-21T16:55:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "checkout/payment.py",
+          "checkout/cart.py",
+          "checkout/session.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 255
+      },
+      {
+        "change_id": "e37af71d-b8f2-4206-bbba-7386e34da99c",
+        "timestamp": "2026-07-21T22:58:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/session.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "dependency",
         "lines_changed": 181
       },
       {
-        "change_id": "e5510314-d5eb-404e-a37b-a2e3fd408ffa",
-        "timestamp": "2026-08-02T22:28:08.101416",
-        "author": "cchen",
+        "change_id": "3fd65933-81bf-4db4-b466-5ad596ebeea2",
+        "timestamp": "2026-07-21T19:41:47.192094",
+        "author": "dolsen",
         "files_changed": [
-          "auth/login.py"
+          "checkout/payment.py",
+          "checkout/cart.py",
+          "checkout/session.py"
         ],
-        "change_type": "code",
-        "lines_changed": 59
+        "change_type": "config",
+        "lines_changed": 181
       },
       {
-        "change_id": "0ca0711d-6eb1-4d29-82de-ae7b8a1b24e8",
-        "timestamp": "2026-08-03T04:38:08.101416",
+        "change_id": "1d940eef-50b7-4cd1-b0b0-8f9c3de517e8",
+        "timestamp": "2026-07-21T19:26:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "checkout/payment.py",
+          "checkout/utils.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 210
+      },
+      {
+        "change_id": "4360142c-79b7-4b36-a159-083996de01f3",
+        "timestamp": "2026-07-21T11:09:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/session.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 304
+      },
+      {
+        "change_id": "fca338ee-51ce-4b03-9e01-cdf09dc5679a",
+        "timestamp": "2026-07-21T11:25:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "checkout/payment.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 206
+      },
+      {
+        "change_id": "e0808058-36bb-44b2-865a-430375f5da1a",
+        "timestamp": "2026-07-21T11:53:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "checkout/cart.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 37
+      }
+    ],
+    "true_cause_id": "e37af71d-b8f2-4206-bbba-7386e34da99c",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "d970aaee-1ead-462a-9128-07bc27fbebf7",
+    "timestamp": "2026-08-03T18:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "search/query.py",
+      "search/index.py"
+    ],
+    "severity": "medium",
+    "candidate_changes": [
+      {
+        "change_id": "1be18197-fa10-475f-b45d-332f0130aa56",
+        "timestamp": "2026-08-03T15:51:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 87
+      },
+      {
+        "change_id": "d7bc91f3-993e-4f73-9d43-010f8140872f",
+        "timestamp": "2026-08-03T17:03:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 295
+      },
+      {
+        "change_id": "5588bc9f-a3f1-46c7-9cca-3ce9fd4167a4",
+        "timestamp": "2026-08-03T11:45:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 316
+      },
+      {
+        "change_id": "73eca478-6546-4387-a5c3-304207b2808a",
+        "timestamp": "2026-08-03T15:11:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py",
+          "search/ranking.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 13
+      },
+      {
+        "change_id": "8b987430-154a-4ec3-ba5e-d7955dcddbdd",
+        "timestamp": "2026-08-03T12:56:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 47
+      },
+      {
+        "change_id": "78d0d713-da68-4440-9e0a-e650fc8496ba",
+        "timestamp": "2026-08-03T11:01:47.192094",
         "author": "mgarcia",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py",
+          "search/ranking.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 253
+      },
+      {
+        "change_id": "0b07db7e-5036-4e50-a6db-9116e7663ee1",
+        "timestamp": "2026-08-03T10:41:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 174
+      },
+      {
+        "change_id": "8340cffe-d01d-468f-8498-31fb6421fa15",
+        "timestamp": "2026-08-03T17:49:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 369
+      },
+      {
+        "change_id": "8fb693be-5af4-40b0-9cb4-b8b21abb72ad",
+        "timestamp": "2026-08-03T14:13:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 30
+      }
+    ],
+    "true_cause_id": "8340cffe-d01d-468f-8498-31fb6421fa15",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "dbe602ee-70ae-4f1f-9b14-e99ca8cbfc7a",
+    "timestamp": "2026-07-23T04:06:47.192094",
+    "service_name": "checkout-service",
+    "symptom": "500 error rate spike",
+    "affected_files": [
+      "checkout/payment.py",
+      "checkout/session.py"
+    ],
+    "severity": "medium",
+    "candidate_changes": [
+      {
+        "change_id": "b595c508-ab94-439c-a677-1c20f5780d2d",
+        "timestamp": "2026-07-23T01:19:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "checkout/cart.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 190
+      },
+      {
+        "change_id": "79260c38-f67f-4481-9757-9e5c3dc9d869",
+        "timestamp": "2026-07-23T03:54:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "checkout/payment.py",
+          "checkout/session.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 205
+      },
+      {
+        "change_id": "da695581-4050-4388-8a75-feb48f49e245",
+        "timestamp": "2026-07-23T03:59:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "checkout/cart.py",
+          "checkout/payment.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 332
+      },
+      {
+        "change_id": "a8845bf9-b3a3-421f-a5bd-2a65b4e218d2",
+        "timestamp": "2026-07-22T21:31:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "checkout/session.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 264
+      },
+      {
+        "change_id": "c875ee09-63fa-494a-bad8-63aa290ece5c",
+        "timestamp": "2026-07-23T00:07:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "checkout/utils.py",
+          "checkout/session.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 267
+      },
+      {
+        "change_id": "c60d39d1-bf61-470a-80be-a8e7c34c4b1b",
+        "timestamp": "2026-07-22T16:19:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "checkout/payment.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 12
+      },
+      {
+        "change_id": "8a623c35-24ce-4214-a213-e8cdee163797",
+        "timestamp": "2026-07-22T17:01:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "checkout/utils.py",
+          "checkout/session.py",
+          "checkout/payment.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 220
+      }
+    ],
+    "true_cause_id": "79260c38-f67f-4481-9757-9e5c3dc9d869",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "ae4cd0d6-0309-40d7-8c65-73b3ef436b76",
+    "timestamp": "2026-08-15T22:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "search/index.py",
+      "search/query.py"
+    ],
+    "severity": "low",
+    "candidate_changes": [
+      {
+        "change_id": "226342e6-bed6-4249-88af-b85b43fea4f1",
+        "timestamp": "2026-08-15T15:31:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py",
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 122
+      },
+      {
+        "change_id": "daa970d2-a1d7-47f5-a8cf-d892169e7b15",
+        "timestamp": "2026-08-15T20:45:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 252
+      },
+      {
+        "change_id": "ef72a0c9-6ffb-4b56-94f2-64ad22d8793c",
+        "timestamp": "2026-08-15T16:37:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 280
+      },
+      {
+        "change_id": "3c9d5d66-2329-4dde-882a-9808c6ee8be2",
+        "timestamp": "2026-08-15T22:02:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 383
+      },
+      {
+        "change_id": "b80b3af7-97fe-4fdc-ba1c-e8a9f578503e",
+        "timestamp": "2026-08-15T21:44:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 370
+      },
+      {
+        "change_id": "112d2dad-444e-4333-9de7-7acbf9883468",
+        "timestamp": "2026-08-15T13:59:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "search/index.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 252
+      },
+      {
+        "change_id": "5369cdaa-c0c4-4201-a072-4e573890d5c9",
+        "timestamp": "2026-08-15T10:16:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 57
+      },
+      {
+        "change_id": "39750a56-54b3-450e-8d8a-d8dd687ed8c5",
+        "timestamp": "2026-08-15T10:24:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py",
+          "search/ranking.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 251
+      }
+    ],
+    "true_cause_id": "3c9d5d66-2329-4dde-882a-9808c6ee8be2",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "70ecbbf0-5d34-4cb5-9121-890cb8fa8256",
+    "timestamp": "2026-08-13T18:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "search/index.py",
+      "search/ranking.py"
+    ],
+    "severity": "critical",
+    "candidate_changes": [
+      {
+        "change_id": "523dd172-4974-4533-b705-2b00dda4803a",
+        "timestamp": "2026-08-13T14:53:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py",
+          "search/ranking.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 248
+      },
+      {
+        "change_id": "aa82c50e-f2d0-4196-a5b8-5c32fbb6f81b",
+        "timestamp": "2026-08-13T08:10:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 28
+      },
+      {
+        "change_id": "1dfb3162-6772-4df6-b0d7-b3f8e358fd86",
+        "timestamp": "2026-08-13T08:04:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 128
+      },
+      {
+        "change_id": "8b8fba87-146b-4bd6-b4dc-671993650a6d",
+        "timestamp": "2026-08-13T15:59:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "search/ranking.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 211
+      },
+      {
+        "change_id": "746fd345-9f68-4035-8135-7efbeb1bc717",
+        "timestamp": "2026-08-13T07:34:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 395
+      },
+      {
+        "change_id": "907db654-5d03-48e3-96d3-23f758e07e8b",
+        "timestamp": "2026-08-13T12:25:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py",
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 317
+      },
+      {
+        "change_id": "b87de383-2879-4e80-97aa-705ab4965a45",
+        "timestamp": "2026-08-13T15:53:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 299
+      },
+      {
+        "change_id": "5825c0e9-f4d9-4347-a240-c1e73aa3e1e9",
+        "timestamp": "2026-08-13T18:02:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 288
+      },
+      {
+        "change_id": "f37f0182-2b33-498a-8746-27c30ce683fa",
+        "timestamp": "2026-08-13T10:32:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/index.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 168
+      }
+    ],
+    "true_cause_id": "5825c0e9-f4d9-4347-a240-c1e73aa3e1e9",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "ccd56a10-e5c5-4091-b969-286841fff427",
+    "timestamp": "2026-07-21T07:06:47.192094",
+    "service_name": "checkout-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "checkout/cart.py",
+      "checkout/session.py"
+    ],
+    "severity": "medium",
+    "candidate_changes": [
+      {
+        "change_id": "7a30e8d3-0297-414e-a3d7-11838a7929d4",
+        "timestamp": "2026-07-20T20:39:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "checkout/cart.py",
+          "checkout/payment.py",
+          "checkout/utils.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 239
+      },
+      {
+        "change_id": "dcd572c5-194e-4aae-b4bb-b2a50eb85e00",
+        "timestamp": "2026-07-20T20:35:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "checkout/session.py",
+          "checkout/payment.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 93
+      },
+      {
+        "change_id": "4086f839-e145-4192-a32f-42a77f1dd970",
+        "timestamp": "2026-07-21T05:16:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "checkout/utils.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 229
+      },
+      {
+        "change_id": "4b2a8368-00a6-4a6f-96fb-9acf7c5aa233",
+        "timestamp": "2026-07-21T07:05:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "checkout/session.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 206
+      }
+    ],
+    "true_cause_id": "4b2a8368-00a6-4a6f-96fb-9acf7c5aa233",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "f2435ab3-0006-420f-97bd-67f93e5c027b",
+    "timestamp": "2026-08-11T14:06:47.192094",
+    "service_name": "checkout-service",
+    "symptom": "500 error rate spike",
+    "affected_files": [
+      "checkout/cart.py",
+      "checkout/utils.py"
+    ],
+    "severity": "medium",
+    "candidate_changes": [
+      {
+        "change_id": "ce7c4b96-e481-494f-8195-6e5ac6e8e4c0",
+        "timestamp": "2026-08-11T07:26:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/session.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 95
+      },
+      {
+        "change_id": "df7d9a35-bfd4-4e87-bc89-18137141aa3f",
+        "timestamp": "2026-08-11T14:05:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "checkout/cart.py",
+          "checkout/utils.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 246
+      },
+      {
+        "change_id": "9f8b2aa2-74a8-4842-9b95-fd753511189f",
+        "timestamp": "2026-08-11T05:51:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "checkout/payment.py",
+          "checkout/session.py",
+          "checkout/utils.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 21
+      },
+      {
+        "change_id": "d1d260ab-a6ad-4cc0-8721-1221ec51411c",
+        "timestamp": "2026-08-11T10:10:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "checkout/cart.py",
+          "checkout/utils.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 289
+      },
+      {
+        "change_id": "e266c78f-0e5f-4bb0-be6b-5acee0365ef9",
+        "timestamp": "2026-08-11T06:56:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/session.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 269
+      },
+      {
+        "change_id": "71ace289-c99c-4d85-92b7-0baa52c26f17",
+        "timestamp": "2026-08-11T05:04:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "checkout/cart.py",
+          "checkout/payment.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 114
+      },
+      {
+        "change_id": "56000434-5c2f-4388-b849-b7dcee1886af",
+        "timestamp": "2026-08-11T09:06:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "checkout/utils.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 355
+      },
+      {
+        "change_id": "6a0abff3-9a29-4858-955d-a8fda14b205c",
+        "timestamp": "2026-08-11T13:35:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "checkout/payment.py",
+          "checkout/cart.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 256
+      },
+      {
+        "change_id": "4e05aaea-6115-474b-b026-30728b61cbc7",
+        "timestamp": "2026-08-11T02:08:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "checkout/cart.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 233
+      }
+    ],
+    "true_cause_id": "df7d9a35-bfd4-4e87-bc89-18137141aa3f",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "e4804e27-e159-406b-ad83-c0b62df65cfc",
+    "timestamp": "2026-08-12T18:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "latency increase",
+    "affected_files": [
+      "search/query.py",
+      "search/ranking.py"
+    ],
+    "severity": "low",
+    "candidate_changes": [
+      {
+        "change_id": "12200b1e-16fb-48c1-a94a-b46caa57577e",
+        "timestamp": "2026-08-12T18:05:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 304
+      },
+      {
+        "change_id": "979599bc-9010-44c2-8d00-7d67a4ddbe8d",
+        "timestamp": "2026-08-12T09:41:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/ranking.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 36
+      },
+      {
+        "change_id": "bd50615d-1ad9-4a9f-9692-091ea7503393",
+        "timestamp": "2026-08-12T11:17:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 150
+      },
+      {
+        "change_id": "65e67c4a-701b-48a9-a118-71d68dcae536",
+        "timestamp": "2026-08-12T14:46:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/ranking.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 352
+      },
+      {
+        "change_id": "07efdce0-ea1a-48e6-85d6-dfd5a97285d1",
+        "timestamp": "2026-08-12T09:50:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 333
+      },
+      {
+        "change_id": "2c1c99da-e808-4c65-86e9-fd905d034100",
+        "timestamp": "2026-08-12T10:01:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 75
+      }
+    ],
+    "true_cause_id": "12200b1e-16fb-48c1-a94a-b46caa57577e",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "20a4f457-d13b-4480-b28f-7c502850de39",
+    "timestamp": "2026-07-20T10:06:47.192094",
+    "service_name": "auth-service",
+    "symptom": "timeout spike",
+    "affected_files": [
+      "auth/middleware.py",
+      "auth/login.py"
+    ],
+    "severity": "low",
+    "candidate_changes": [
+      {
+        "change_id": "760b7deb-079f-4e21-8de0-6a234bf8fd90",
+        "timestamp": "2026-07-19T23:34:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "auth/login.py",
+          "auth/middleware.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 225
+      },
+      {
+        "change_id": "cd708097-ba95-4d1f-86f4-fd45aa94b37d",
+        "timestamp": "2026-07-20T08:54:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "auth/middleware.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 126
+      },
+      {
+        "change_id": "023e8600-2a1b-4607-a82b-ab29cee46728",
+        "timestamp": "2026-07-20T10:00:47.192094",
+        "author": "twong",
         "files_changed": [
           "auth/middleware.py",
           "auth/login.py"
         ],
-        "change_type": "config",
-        "lines_changed": 367
+        "change_type": "dependency",
+        "lines_changed": 351
       },
       {
-        "change_id": "f41c6017-c869-49ac-ac8d-d07ea91ce5fc",
-        "timestamp": "2026-08-03T04:47:08.101416",
+        "change_id": "056cfd45-4b8f-40c5-8036-01f748320fe5",
+        "timestamp": "2026-07-20T02:14:47.192094",
         "author": "rpatel",
         "files_changed": [
+          "auth/tokens.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 135
+      },
+      {
+        "change_id": "f5b9e6fc-abdd-421f-bc73-c72349bcd41a",
+        "timestamp": "2026-07-20T05:14:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "auth/login.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 187
+      },
+      {
+        "change_id": "fefb90f2-3d84-4375-ae07-bc55ae1d83d8",
+        "timestamp": "2026-07-20T03:03:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "auth/middleware.py",
           "auth/tokens.py",
+          "auth/login.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 271
+      }
+    ],
+    "true_cause_id": "023e8600-2a1b-4607-a82b-ab29cee46728",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "f9b4886c-c3e1-4c4f-8bf5-dd03a1d8844f",
+    "timestamp": "2026-08-02T11:06:47.192094",
+    "service_name": "auth-service",
+    "symptom": "timeout spike",
+    "affected_files": [
+      "auth/middleware.py",
+      "auth/login.py"
+    ],
+    "severity": "medium",
+    "candidate_changes": [
+      {
+        "change_id": "de77c6e4-cc9d-457b-9a83-8b751697b91a",
+        "timestamp": "2026-08-02T06:00:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/middleware.py",
+          "auth/login.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 114
+      },
+      {
+        "change_id": "4a845868-75de-46f7-b9ce-f678410fde63",
+        "timestamp": "2026-08-02T10:51:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "auth/login.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 346
+      },
+      {
+        "change_id": "d7d72fba-a3fe-4659-a1d9-7dd0debbee77",
+        "timestamp": "2026-08-02T06:02:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "auth/login.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 34
+      },
+      {
+        "change_id": "92dced74-1fce-46d9-a25e-26d4de4e7b84",
+        "timestamp": "2026-08-02T10:17:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 245
+      },
+      {
+        "change_id": "c42b2b75-bb85-49b0-a098-4a53675fdbaa",
+        "timestamp": "2026-08-02T01:01:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "auth/tokens.py",
+          "auth/login.py",
+          "auth/middleware.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 38
+      },
+      {
+        "change_id": "9c9061e3-4ea2-428e-b22f-1b9385afade7",
+        "timestamp": "2026-08-02T02:42:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 98
+      },
+      {
+        "change_id": "92809fcd-d4d3-4bdb-8379-33c2a39e41b3",
+        "timestamp": "2026-08-02T04:05:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "auth/login.py",
+          "auth/middleware.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 353
+      }
+    ],
+    "true_cause_id": "4a845868-75de-46f7-b9ce-f678410fde63",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "bbe7a6f3-23d5-4e34-bbe9-a13e06b063d6",
+    "timestamp": "2026-07-29T06:06:47.192094",
+    "service_name": "auth-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "auth/tokens.py",
+      "auth/login.py"
+    ],
+    "severity": "medium",
+    "candidate_changes": [
+      {
+        "change_id": "a6a9384d-7f27-4d71-bbe1-3c420fa4a826",
+        "timestamp": "2026-07-28T23:56:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "auth/tokens.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 226
+      },
+      {
+        "change_id": "3445a9c8-7ab2-4b42-b81e-29fdadc04315",
+        "timestamp": "2026-07-29T01:36:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "auth/login.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 237
+      },
+      {
+        "change_id": "4a3230b0-9af7-4e68-aec2-e08bab84df52",
+        "timestamp": "2026-07-29T01:48:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "auth/tokens.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 75
+      },
+      {
+        "change_id": "0a534d57-a700-40f7-b8e4-f766121f978d",
+        "timestamp": "2026-07-28T22:11:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "auth/middleware.py",
+          "auth/tokens.py",
+          "auth/login.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 115
+      },
+      {
+        "change_id": "d5d8f20f-4096-46eb-a3ee-5681293d85b8",
+        "timestamp": "2026-07-29T06:04:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "auth/login.py",
+          "auth/tokens.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 336
+      },
+      {
+        "change_id": "34f4c99c-ffd3-4709-9290-5e2f3a327419",
+        "timestamp": "2026-07-29T05:10:47.192094",
+        "author": "rpatel",
+        "files_changed": [
           "auth/middleware.py"
         ],
         "change_type": "code",
-        "lines_changed": 29
+        "lines_changed": 172
       }
     ],
-    "true_cause_id": "f41c6017-c869-49ac-ac8d-d07ea91ce5fc",
+    "true_cause_id": "d5d8f20f-4096-46eb-a3ee-5681293d85b8",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "56633602-86d1-45db-b7f0-f9c3259d1b98",
+    "timestamp": "2026-08-10T10:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "timeout spike",
+    "affected_files": [
+      "search/index.py",
+      "search/ranking.py"
+    ],
+    "severity": "critical",
+    "candidate_changes": [
+      {
+        "change_id": "86436fe3-ade4-4d36-b6b8-92ca14973ad5",
+        "timestamp": "2026-08-09T23:57:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 398
+      },
+      {
+        "change_id": "16d62559-02bf-4412-8446-74e9949d3650",
+        "timestamp": "2026-08-10T08:11:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 180
+      },
+      {
+        "change_id": "ca2dd4e8-d1db-482f-84b5-9a1788030372",
+        "timestamp": "2026-08-10T08:56:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 66
+      },
+      {
+        "change_id": "51aa58ff-94f9-4625-a8ad-2e951cd91ebb",
+        "timestamp": "2026-08-10T09:57:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 106
+      },
+      {
+        "change_id": "817389e8-fab5-448c-b3e7-f3a3047d1c8c",
+        "timestamp": "2026-08-10T08:27:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 256
+      },
+      {
+        "change_id": "7ecaa673-7e78-4ab9-be48-69ff5653d4b9",
+        "timestamp": "2026-08-10T04:03:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py",
+          "search/ranking.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 102
+      },
+      {
+        "change_id": "e8f622b0-58e5-40e2-acf2-f6e6434f4df2",
+        "timestamp": "2026-08-10T08:50:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/query.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 353
+      },
+      {
+        "change_id": "ba6365c0-97bc-4b66-a8f2-02dc14aebed3",
+        "timestamp": "2026-08-10T05:08:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 116
+      },
+      {
+        "change_id": "969f0fc6-637b-4a31-827a-8f3d8d29ed6b",
+        "timestamp": "2026-08-10T06:32:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py",
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 218
+      }
+    ],
+    "true_cause_id": "51aa58ff-94f9-4625-a8ad-2e951cd91ebb",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "e7998221-7c7c-48e6-b7e2-864a54e58557",
+    "timestamp": "2026-08-12T21:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "500 error rate spike",
+    "affected_files": [
+      "search/index.py",
+      "search/query.py"
+    ],
+    "severity": "critical",
+    "candidate_changes": [
+      {
+        "change_id": "07ee092c-5958-4e40-936d-28e892632af0",
+        "timestamp": "2026-08-12T12:25:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 86
+      },
+      {
+        "change_id": "a472ed3b-e9d5-47f2-8fa0-f7baa9e34c0c",
+        "timestamp": "2026-08-12T12:15:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 302
+      },
+      {
+        "change_id": "df8687e0-5b8d-4d5f-a8d1-0433dc9ef996",
+        "timestamp": "2026-08-12T09:37:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/ranking.py",
+          "search/query.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 326
+      },
+      {
+        "change_id": "7a9f0a3c-1d56-4bd5-8636-c91088f2bf4b",
+        "timestamp": "2026-08-12T20:46:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 238
+      },
+      {
+        "change_id": "8ba658fe-7403-4063-b01f-5dddd244a3be",
+        "timestamp": "2026-08-12T10:36:47.192094",
+        "author": "jsmith",
+        "files_changed": [
+          "search/query.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 374
+      },
+      {
+        "change_id": "85291f19-5b24-4de6-8168-d6a5b55057b2",
+        "timestamp": "2026-08-12T10:10:47.192094",
+        "author": "akumar",
+        "files_changed": [
+          "search/index.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 54
+      },
+      {
+        "change_id": "e603f11e-5453-4c29-9889-ae01f9a76340",
+        "timestamp": "2026-08-12T16:42:47.192094",
+        "author": "rpatel",
+        "files_changed": [
+          "search/ranking.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 375
+      }
+    ],
+    "true_cause_id": "7a9f0a3c-1d56-4bd5-8636-c91088f2bf4b",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "7cc09e9c-6a0e-4acc-93a2-c94a2f12c15a",
+    "timestamp": "2026-08-05T00:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "job failure",
+    "affected_files": [
+      "search/ranking.py",
+      "search/index.py"
+    ],
+    "severity": "medium",
+    "candidate_changes": [
+      {
+        "change_id": "898611bf-54c5-4a2b-8824-638e9de92311",
+        "timestamp": "2026-08-04T20:29:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py",
+          "search/query.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 108
+      },
+      {
+        "change_id": "79ee1115-77ac-4a81-8f71-d04db7fc29c0",
+        "timestamp": "2026-08-04T20:26:47.192094",
+        "author": "twong",
+        "files_changed": [
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 286
+      },
+      {
+        "change_id": "89c9bbe5-a111-4779-bfca-d6743b2ec1b6",
+        "timestamp": "2026-08-04T23:46:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "search/index.py",
+          "search/ranking.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 112
+      },
+      {
+        "change_id": "bb605ddb-1437-41aa-a1a5-cfc4c3095167",
+        "timestamp": "2026-08-04T20:46:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 307
+      },
+      {
+        "change_id": "df157f5f-b006-4f9c-b5b5-6240be678162",
+        "timestamp": "2026-08-04T20:56:47.192094",
+        "author": "ynakamura",
+        "files_changed": [
+          "search/index.py",
+          "search/query.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 222
+      }
+    ],
+    "true_cause_id": "89c9bbe5-a111-4779-bfca-d6743b2ec1b6",
+    "source": "synthetic"
+  },
+  {
+    "incident_id": "1d6013c7-a4bb-4635-bac1-52aed6f3ac13",
+    "timestamp": "2026-07-21T12:06:47.192094",
+    "service_name": "search-service",
+    "symptom": "timeout spike",
+    "affected_files": [
+      "search/index.py",
+      "search/ranking.py"
+    ],
+    "severity": "medium",
+    "candidate_changes": [
+      {
+        "change_id": "99c5ea5b-f540-425b-8488-55bf6307e67e",
+        "timestamp": "2026-07-21T06:36:47.192094",
+        "author": "dolsen",
+        "files_changed": [
+          "search/query.py",
+          "search/ranking.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 286
+      },
+      {
+        "change_id": "8274d0de-2b78-4f2a-9daa-01a02f5593d7",
+        "timestamp": "2026-07-21T11:16:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/query.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 187
+      },
+      {
+        "change_id": "93f6dac9-f978-42d2-b06a-9af91ea09f12",
+        "timestamp": "2026-07-21T11:59:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "search/ranking.py",
+          "search/index.py"
+        ],
+        "change_type": "config",
+        "lines_changed": 132
+      },
+      {
+        "change_id": "255352b2-3c6f-4bb7-9928-f53e7db01eb9",
+        "timestamp": "2026-07-21T05:11:47.192094",
+        "author": "mgarcia",
+        "files_changed": [
+          "search/query.py",
+          "search/ranking.py",
+          "search/index.py"
+        ],
+        "change_type": "dependency",
+        "lines_changed": 143
+      },
+      {
+        "change_id": "bd442bbf-30e8-4e0a-a92d-d73031d8ea32",
+        "timestamp": "2026-07-21T07:24:47.192094",
+        "author": "cchen",
+        "files_changed": [
+          "search/ranking.py"
+        ],
+        "change_type": "code",
+        "lines_changed": 158
+      }
+    ],
+    "true_cause_id": "93f6dac9-f978-42d2-b06a-9af91ea09f12",
     "source": "synthetic"
   }
 ]
