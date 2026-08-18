@@ -59,7 +59,11 @@
       }
     ],
     "true_cause_id": "05783082-e0e2-428c-b8e4-4648401ac845",
-    "source": "real_grounded"
+    "source": "real_grounded",
+    "affected_files": [
+      "db/permissions.yaml",
+      "bot_management/feature_file_gen.py"
+    ]
   },
   {
     "incident_id": "0064949d-b177-4868-a186-993f4434b4e7",
@@ -111,7 +115,11 @@
       }
     ],
     "true_cause_id": "07df9ddc-49c0-4d6a-8087-22abb0d638fc",
-    "source": "real_grounded"
+    "source": "real_grounded",
+    "affected_files": [
+      "waf/managed_rules.conf",
+      "waf/rule_engine.py"
+    ]
   },
   {
     "incident_id": "6ec36dbb-e157-4df3-afe9-66130b878d90",
@@ -172,7 +180,10 @@
       }
     ],
     "true_cause_id": "d3d36252-9a6b-4e5e-a557-e5d741922765",
-    "source": "real_grounded"
+    "source": "real_grounded",
+    "affected_files": [
+      "db/schema/issues_table.sql"
+    ]
   },
   {
     "incident_id": "c80ad674-8a5e-4fc9-92f9-b052e15ff9ae",
@@ -223,7 +234,10 @@
       }
     ],
     "true_cause_id": "58da6491-846a-48c3-ab03-894ae76d0238",
-    "source": "real_grounded"
+    "source": "real_grounded",
+    "affected_files": [
+      "orchestrator/failover_policy.yaml"
+    ]
   },
   {
     "incident_id": "f94719f2-5c6d-441d-8b51-14da3b49057a",
@@ -274,7 +288,10 @@
       }
     ],
     "true_cause_id": "00901960-2d09-4f4d-9a95-a2b5c3fa831d",
-    "source": "real_grounded"
+    "source": "real_grounded",
+    "affected_files": [
+      "db/migrations/0045_alter_view_count.sql"
+    ]
   },
   {
     "incident_id": "a2fa1b71-ec34-4d7f-a3f7-e6d0ba6086fd",
@@ -325,6 +342,9 @@
       }
     ],
     "true_cause_id": "5b1375f1-f8dc-4a4e-a0af-b378c678b1b2",
-    "source": "real_grounded"
+    "source": "real_grounded",
+    "affected_files": [
+      "infra/autoscaling_policy.yaml"
+    ]
   }
 ]
